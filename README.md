@@ -1,1 +1,0 @@
-Trabalho Interdisciplinar de Software

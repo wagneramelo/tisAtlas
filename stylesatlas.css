@@ -1,0 +1,35 @@
+header{
+	background-image:url("Imagens/navBarBG.png");
+	background-repeat: repeat-x;
+	position: relative;
+}
+
+h1{
+	color:white;
+	position: absolute;
+	top: 10px;
+	left: 100px;
+}
+
+.img-menu{
+	width: 60px;
+	height: 60px;
+}
+
+nav ul{
+	margin-left: 100px;
+}
+
+nav ul li{
+	display: inline;
+	text-decoration: none;
+	text-align: center;
+	color: white;
+	margin-right: 5px;
+}
+
+footer{
+	background-color: rgb(226,128,46);
+	width: 100%;
+	text-align: center;
+}
