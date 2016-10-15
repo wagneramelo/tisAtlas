@@ -1,33 +1,201 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #e7d1b9;
+	}
 header{
-	background-image:url("Imagens/navBarBG.png");
-	background-repeat: repeat-x;
+	height: 100px;
+	background-color: #e4801e;	
+	position: relative;
+}
+#header_container{
+	margin: 0px auto;
+	width: 1000px;
+	height: 80px;
+	position: relative;
+	border: 1px solid green;	
+	}
+#img_logo{
+	height: 70px;
+	width: 70px;
+	border: 1px solid green;
+	position: relative;
+	float: left;
+	left: 100px;
+	top: 4px;
+	}
+.curso_nome{
+	color:white;
+	position: relative;
+	border: 1px solid green;
+	text-align: center;
+	display: inline-block;
+	left: 200px;	
+}
+
+#nav_barra{
+	position: relative;
+	border: 1px solid green;
+	text-align: center;
+	height: 25px;
+	background-color: #5a5f63;
+}
+
+#nav_lista{
+	margin: 0px auto;
+	border: 1px solid white;
+	width: 960px;
+}
+
+.nav_itens{
+	border: 1px solid white;
+	display: inline;
+	color: white;
+	margin-right: 40px;
 	position: relative;
 }
 
-h1{
-	color:white;
-	position: absolute;
-	top: 10px;
-	left: 100px;
+.nav_itens_lista {
+	display: none;
+	background-color: black;
+	left: -60px;
+	width: 150px;
+    padding: 10px;
+	position:absolute;
+	list-style-type: none;
+	z-index: 99;	
 }
-
-.img-menu{
-	width: 60px;
-	height: 60px;
-}
-
-nav ul{
-	margin-left: 100px;
-}
-
-nav ul li{
-	display: inline;
+.nav_itens_lista_sistemas {
+	margin: 10px auto;	
+	}
+.nav_itens_lista_sistemas a {
 	text-decoration: none;
-	text-align: center;
-	color: white;
-	margin-right: 5px;
+	color: white;	
+	}
+.nav_itens_lista_sistemas:hover {
+	background-color: grey;
+	}
+#nav_lista li:nth-child(2):hover ul {
+    display: block;
+}
+#nav_lista li:nth-child(3):hover ul {
+    display: block;
+}
+#nav_lista li:nth-child(4):hover ul {
+    display: block;
+}
+#nav_lista li:nth-child(5):hover ul {
+    display: block;
 }
 
+#conteudo {
+	position: relative;
+	border: 1px solid green;	
+	width: 1001px;
+	margin: 15px auto;
+	height: 675px;			
+	}
+#coluna_lateral {	
+	background-color: #d5d5d5;	
+	width: 125px;
+	float: left;
+	height: 673px;	
+	}
+.coluna_lista {
+	list-style-type: none;
+	display: block;
+	position: relative;
+	margin: 71px 0px 0px -40px;	
+	}
+.coluna_item {
+	width: 125px;
+	height: 111px;
+	display: block;
+	border: 1px solid grey;	
+	margin: 0px 0px -16px 0px;	
+	position: relative;
+	background-color: #e7e7e7;
+	text-align: center;
+	vertical-align: middle;		
+	}
+.coluna_item:hover{
+	background-color: #d5d5d5;
+	}
+#sistema_selecionado {
+	background-color: #e7e7e7;
+	border: 1px solid grey;	;
+	width: 125px;
+	height: 70px;
+	position: absolute;
+	z-index:98;		
+	}
+#sistema_conjuntos {
+	background-color: #d5d5d5;
+	margin: 0px auto;
+	width: 850px;
+	height: 70px;
+	display: inline-block;
+			
+	}
+	
+#sistema_lista{
+	margin: 0px 0px 0px -40px;
+	display: inline-block;	
+	position: relative;	
+	}
+	
+.sistema_unidade{
+	width: 200px;
+	height: 70px;
+	margin: 0px -4px 0px 0px;
+	display: inline-block;
+	background-color: #e7e7e7;
+	position: relative;
+	text-align: center;
+	border: 1px solid grey;		
+	}
+.sistema_unidade:hover{
+	background-color: #d5d5d5;
+	}
+.img_selecionada {
+	width: 870px;
+	height: 480px;
+	border: 3px solid black;
+	position: relative;
+	left: 2px;
+	top: 2px		
+	}
+#img_album{	
+	height: 110px;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	position: relative;
+	left: 2px;
+	top: 1px;
+	}
+.img_item_album {
+	width: 110px;
+	height: 110px;
+	display: inline;	
+	}
+#side_scroll_button_left{
+	position: absolute;
+	width: 30px;
+	height: 110px;
+	}
+#side_scroll_button_right{
+	position: absolute;
+	width: 30px;
+	height: 110px;
+	left: 845px;
+	top: 0px;
+	
+	}
+.side_scroll_button{
+	background-color: black;
+	opacity: 0.5;
+	
+	}
 footer{
 	background-color: rgb(226,128,46);
 	width: 100%;
