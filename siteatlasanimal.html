@@ -1,81 +1,99 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
 	<title>Atlas Animal</title>
 	<meta charset="UTF-8"/>
 	<meta name="keywords" content="esqueletos, animais, bovino, atlas, veterinária, estudo">
      <meta name="description" content="atlas veterinário para estudantes e professores">
 	<link rel="stylesheet" href="stylesatlas.css"/>
-
 </head>
-
+<body>
 <header>
-	<img id="imagemcabecalho"
-		src="Imagens/pucLOGO.png"
-		alt="Imagem Cabeçalho - Puc Minas" />
-	<h1> PUC Minas - Medicina Veterinária </h1>
-	<nav>
-		<ul>
-			<li class="linhanavegacao"> Home </li>
-			<li class="linhanavegacao"> Bovino </li>
-			<li class="linhanavegacao"> Equino </li>
-			<li class="linhanavegacao"> Felino </li>
-			<li class="linhanavegacao"> Canídeo </li>
-			<li class="linhanavegacao"> Material</li>
-			<li class="linhanavegacao"> Testes </li>
-			<li class="linhanavegacao"> Cadastre-se </li>
+	<div id="header_container">
+		<img id="img_logo" src="placeholder" alt="img_logo">
+		<h1 class="curso_nome"> PUC Minas - Medicina Veterinária </h1>
+    </div>
+	<nav id="nav_barra">
+		<ul id="nav_lista">
+			<li class="nav_itens"> Home   </li>
+			<li class="nav_itens"> Bovino
+                <ul class="nav_itens_lista">
+                    <li class="nav_itens_lista_sistemas"><a href="link">Sistema Esquelético</a></li>
+                    <li class="nav_itens_lista_sistemas"><a href="link">Sistema Digestório</a></li>
+                    <li class="nav_itens_lista_sistemas"><a href="link">Sistema Circulatório</a></li>
+                    <li class="nav_itens_lista_sistemas"><a href="link">Sistema Nervoso</a></li>
+                </ul>
+            </li>
+			<li class="nav_itens"> Equino
+                    <ul class="nav_itens_lista">
+                            <li class="nav_itens_lista_sistemas"><a href="link">Sistema Esquelético</a></li>
+                            <li class="nav_itens_lista_sistemas"><a href="link">Sistema Digestório</a></li>
+                            <li class="nav_itens_lista_sistemas"><a href="link">Sistema Circulatório</a></li>
+                            <li class="nav_itens_lista_sistemas"><a href="link">Sistema Nervoso</a></li>
+                    </ul>
+                 </li>
+                
+			<li class="nav_itens"> Felino
+            		<ul class="nav_itens_lista">
+                        <li class="nav_itens_lista_sistemas"><a href="link">Sistema Esquelético</a></li>
+                        <li class="nav_itens_lista_sistemas"><a href="link">Sistema Digestório</a></li>
+                        <li class="nav_itens_lista_sistemas"><a href="link">Sistema Circulatório</a></li>
+                        <li class="nav_itens_lista_sistemas"><a href="link">Sistema Nervoso</a></li>
+                	</ul>
+             </li>
+            	
+			<li class="nav_itens"> Canídeo
+            		<ul class="nav_itens_lista">
+                        <li class="nav_itens_lista_sistemas"><a href="link">Sistema Esquelético</a></li>
+                        <li class="nav_itens_lista_sistemas"><a href="link">Sistema Digestório</a></li>
+                        <li class="nav_itens_lista_sistemas"><a href="link">Sistema Circulatório</a></li>
+                        <li class="nav_itens_lista_sistemas"><a href="link">Sistema Nervoso</a></li>
+                	</ul>
+             </li>
+            	
+			<li class="nav_itens"> Material</li>
+			<li class="nav_itens"> Testes </li>
+			<li class="nav_itens"> Cadastre-se </li>
 		</ul>
 	</nav>
 </header>
-
-
-<article>
-	<img id="imagemossos"
-		src="Imagens/ossos.png"
-		alt="Ossos"/>
-
-	<div id="Ossos">
-		<ul>
-			<li class="colunaestruturas"> <img src="Imagens/cranio_sideBar.png" alt="Crânio" class="img-menu"/></li>
-			<li class="colunaestruturas"> <img src="Imagens/costela_sideBar.png" alt="Costela e Cartilagem Costais" class="img-menu"/> </li>
-			<li class="colunaestruturas"> <img src="Imagens/membroToraxico_sideBar.png" alt="Membro Toráxico" class="img-menu"/> </li>
-			<li class="colunaestruturas"> <img src="Imagens/membroPelvico_sideBar.png" alt="Membro Pélvico" class="img-menu"/> </li>
-			<li class="colunaestruturas"> <img src="Imagens/colunaVertebral_sideBar.png" alt="Coluna Vertebral" class="img-menu"/> </li>
-			<li class="colunaestruturas"> <img src="Imagens/esterno_sideBar.png" alt="Esterno" class="img-menu"/> </li>
+<div id="conteudo">
+	<div id="coluna_lateral">
+    	<div id="sistema_selecionado"><p>Sistema esqueletico</p>
+        </div>
+		<ul class="coluna_lista">
+			<li class="coluna_item"> <p> cranio</p></li>
+			<li class="coluna_item"> <p> costela</p></li>
+			<li class="coluna_item"> <p> membro toraxico</p></li>
+			<li class="coluna_item"> <p> membro pelvico</p></li>
+			<li class="coluna_item"> <p> coluna vertebral</p></li>
+			<li class="coluna_item"> <p> esterno</p></li>
 		</ul>
 	</div>
-
-	<img id="imagemligamentos"
-		src="Imagens/ligamentos.png"
-		alt="Ligamentos"/>
-
-	<div id="Ligamentos">
-		<ul>
-			<li class="colunaestruturas"> <img src="Imagens/cranio_sideBar.png" alt="Crânio" class="img-menu"/></li>
-			<li class="colunaestruturas"> <img src="Imagens/costela_sideBar.png" alt="Costela e Cartilagem Costais " class="img-menu"/> </li>
-			<li class="colunaestruturas"> <img src="Imagens/membroToraxico_sideBar.png" alt="Membro Toráxico" class="img-menu"/> </li>
-			<li class="colunaestruturas"> <img src="Imagens/membroPelvico_sideBar.png" alt="Membro Pélvico" class="img-menu"/> </li>
-			<li class="colunaestruturas"> <img src="Imagens/colunaVertebral_sideBar.png" alt="Coluna Vertebral" class="img-menu"/> </li>
-			<li class="colunaestruturas"> <img src="Imagens/esterno_sideBar.png" alt="Esterno" class="img-menu"/> </li>
-		</ul>
-	</div>
-	<img id="imagemmusculos"
-		src="Imagens/musculos.png"
-		alt="Músculos"/>
-
-	<div id="Musculos">
-		<ul>
-			<li class="colunaestruturas"> <img src="Imagens/cranio_sideBar.png" alt="Crânio" class="img-menu"/></li>
-			<li class="colunaestruturas"> <img src="Imagens/costela_sideBar.png" alt="Costela e Cartilagem Costais" class="img-menu"/> </li>
-			<li class="colunaestruturas"> <img src="Imagens/membroToraxico_sideBar.png" alt="Membro Toráxico" class="img-menu"/> </li>
-			<li class="colunaestruturas"> <img src="Imagens/membroPelvico_sideBar.png" alt="Membro Pélvico" class="img-menu"/> </li>
-			<li class="colunaestruturas"> <img src="Imagens/colunaVertebral_sideBar.png" alt="Coluna Vertebral" class="img-menu"/> </li>
-			<li class="colunaestruturas"> <img src="Imagens/esterno_sideBar.png" alt="Esterno" class="img-menu"/> </li>
-		</ul>
-	</div>
-
-	<p> </p>
-<footer id="rodape"> Copyright &copy; 2016 - by Equipe TIS I </br>  Versão Móvel </footer>
-
+    <div id="sistema_conjuntos">
+    	<ul id="sistema_lista">
+			<li class="sistema_unidade"> <p> Ossos</p></li>
+			<li class="sistema_unidade"> <p> Musculos</p></li>
+			<li class="sistema_unidade"> <p> Ligamentos</p></li>			
+		</ul>    
+    </div>
+    <div id="img_destaque">
+    	<img class="img_selecionada" src="placeholder" alt="imagem selecionada">
+    </div>
+    <div id="img_album">
+    	<div class="side_scroll_button" id="side_scroll_button_left"></div>
+    	<img class="img_item_album" src="placeholder" alt="imagem album">
+        <img class="img_item_album" src="placeholder" alt="imagem album">
+        <img class="img_item_album" src="placeholder" alt="imagem album">
+        <img class="img_item_album" src="placeholder" alt="imagem album">
+        <img class="img_item_album" src="placeholder" alt="imagem album">
+        <img class="img_item_album" src="placeholder" alt="imagem album">
+        <img class="img_item_album" src="placeholder" alt="imagem album">
+        <div class="side_scroll_button" id="side_scroll_button_right"></div>    	
+    </div>
+ </div>	
+<footer id="rodape"> Copyright &copy; 2016 - by Equipe TIS I <br>  Versão Móvel
+</footer>
+</body>
 </html>
+
