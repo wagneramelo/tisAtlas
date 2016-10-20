@@ -10,13 +10,13 @@
 <body>
 <header>
 	<div id="header_container">
-		<img id="img_logo" src="placeholder" alt="img_logo">
+		<img id="img_logo" src="img/logo_white.png" alt="img_logo">
 		<h1 class="curso_nome"> PUC Minas - Medicina Veterinária </h1>
     </div>
 	<nav id="nav_barra">
 		<ul id="nav_lista">
-			<li class="nav_itens"> Home   </li>
-			<li class="nav_itens"> Bovino
+			<li class="nav_itens">Home</li>
+			<li class="nav_itens">Bovino
                 <ul class="nav_itens_lista">
                     <li class="nav_itens_lista_sistemas"><a href="link">Sistema Esquelético</a></li>
                     <li class="nav_itens_lista_sistemas"><a href="link">Sistema Digestório</a></li>
@@ -24,7 +24,7 @@
                     <li class="nav_itens_lista_sistemas"><a href="link">Sistema Nervoso</a></li>
                 </ul>
             </li>
-			<li class="nav_itens"> Equino
+			<li class="nav_itens">Equino
                     <ul class="nav_itens_lista">
                             <li class="nav_itens_lista_sistemas"><a href="link">Sistema Esquelético</a></li>
                             <li class="nav_itens_lista_sistemas"><a href="link">Sistema Digestório</a></li>
@@ -33,7 +33,7 @@
                     </ul>
                  </li>
                 
-			<li class="nav_itens"> Felino
+			<li class="nav_itens">Felino
             		<ul class="nav_itens_lista">
                         <li class="nav_itens_lista_sistemas"><a href="link">Sistema Esquelético</a></li>
                         <li class="nav_itens_lista_sistemas"><a href="link">Sistema Digestório</a></li>
@@ -42,7 +42,7 @@
                 	</ul>
              </li>
             	
-			<li class="nav_itens"> Canídeo
+			<li class="nav_itens">Canídeo
             		<ul class="nav_itens_lista">
                         <li class="nav_itens_lista_sistemas"><a href="link">Sistema Esquelético</a></li>
                         <li class="nav_itens_lista_sistemas"><a href="link">Sistema Digestório</a></li>
@@ -51,49 +51,43 @@
                 	</ul>
              </li>
             	
-			<li class="nav_itens"> Material</li>
-			<li class="nav_itens"> Testes </li>
-			<li class="nav_itens"> Cadastre-se </li>
+			<li class="nav_itens">Material</li>
+			<li class="nav_itens">Testes</li>
+			<li class="nav_itens">Cadastre-se</li>
 		</ul>
 	</nav>
 </header>
-<div id="conteudo">
-	<div id="coluna_lateral">
-    	<div id="sistema_selecionado"><p>Sistema esqueletico</p>
+<div id="conteudo">	
+    	<div id="sistema_conjuntos">
+        	<div id="sistema_selecionado"><img class="img_sistema_selecionado" src="img/sistema_escolhido_esqueletico.png" alt="sistema selecionado"></div>
+    		<div class="sistema_unidade"><a href="link"><img class="img_sistema_unidade" src="img/sistema_unidades_ossos.png" alt="sistema unidade"></a></div>
+			<div class="sistema_unidade"><a href="link"><img class="img_sistema_unidade" src="img/sistema_unidades_musculos.png" alt="sistema unidade"></a></div>
+			<div id="sistema_unidade"><a href="link"><img class="img_sistema_unidade" src="img/sistema_unidades_ligamentos.png" alt="sistema unidade"></a></div>			
+		</div>
+        <div id="coluna_lateral">            
+                <div class="coluna_item"><a href="link"><img class="img_coluna_item" src="img/coluna_item_cranio.png" alt="sistema unidade"></a></div>
+                <div class="coluna_item"><a href="link"><img class="img_coluna_item" src="img/coluna_item_costela.png" alt="sistema unidade"></a></div>
+                <div class="coluna_item"><a href="link"><img class="img_coluna_item" src="img/coluna_item_membrotoraxico.png" alt="sistema unidade"></a></div>
+                <div class="coluna_item"><a href="link"><img class="img_coluna_item" src="img/coluna_item_membropelvico.png" alt="sistema unidade"></a></div>
+                <div class="coluna_item"><a href="link"><img class="img_coluna_item" src="img/coluna_item_colunavertebral.png" alt="sistema unidade"></a></div>
+                <div class="coluna_item"><a href="link"><img class="img_coluna_item" src="img/coluna_item_esterno.png" alt="sistema unidade"></a></div>            
+		</div>    
+    <div class="album">
+    	<div class="img_destaque"><img class="img_selecionada" src="placeholder" alt="imagem selecionada"></div>
+        <div class="img_album">
+            <div class="side_scroll_button" id="side_scroll_button_left"></div>
+            <img class="img_item_album" src="placeholder" alt="imagem album">
+            <img class="img_item_album" src="placeholder" alt="imagem album">
+            <img class="img_item_album" src="placeholder" alt="imagem album">
+            <img class="img_item_album" src="placeholder" alt="imagem album">
+            <img class="img_item_album" src="placeholder" alt="imagem album">
+            <img class="img_item_album" src="placeholder" alt="imagem album">
+            <img class="img_item_album" src="placeholder" alt="imagem album">
+            <div class="side_scroll_button" id="side_scroll_button_right"></div>    	
         </div>
-		<ul class="coluna_lista">
-			<li class="coluna_item"> <p> cranio</p></li>
-			<li class="coluna_item"> <p> costela</p></li>
-			<li class="coluna_item"> <p> membro toraxico</p></li>
-			<li class="coluna_item"> <p> membro pelvico</p></li>
-			<li class="coluna_item"> <p> coluna vertebral</p></li>
-			<li class="coluna_item"> <p> esterno</p></li>
-		</ul>
-	</div>
-    <div id="sistema_conjuntos">
-    	<ul id="sistema_lista">
-			<li class="sistema_unidade"> <p> Ossos</p></li>
-			<li class="sistema_unidade"> <p> Musculos</p></li>
-			<li class="sistema_unidade"> <p> Ligamentos</p></li>			
-		</ul>    
-    </div>
-    <div id="img_destaque">
-    	<img class="img_selecionada" src="placeholder" alt="imagem selecionada">
-    </div>
-    <div id="img_album">
-    	<div class="side_scroll_button" id="side_scroll_button_left"></div>
-    	<img class="img_item_album" src="placeholder" alt="imagem album">
-        <img class="img_item_album" src="placeholder" alt="imagem album">
-        <img class="img_item_album" src="placeholder" alt="imagem album">
-        <img class="img_item_album" src="placeholder" alt="imagem album">
-        <img class="img_item_album" src="placeholder" alt="imagem album">
-        <img class="img_item_album" src="placeholder" alt="imagem album">
-        <img class="img_item_album" src="placeholder" alt="imagem album">
-        <div class="side_scroll_button" id="side_scroll_button_right"></div>    	
-    </div>
- </div>	
+ 	</div>
+</div>	
 <footer id="rodape"> Copyright &copy; 2016 - by Equipe TIS I <br>  Versão Móvel
 </footer>
 </body>
 </html>
-

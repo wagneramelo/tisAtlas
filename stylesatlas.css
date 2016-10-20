@@ -13,12 +13,12 @@ header{
 	width: 1000px;
 	height: 80px;
 	position: relative;
-	border: 1px solid green;	
+	border: 0px solid green;	
 	}
 #img_logo{
 	height: 70px;
 	width: 70px;
-	border: 1px solid green;
+	border: 0px solid green;
 	position: relative;
 	float: left;
 	left: 100px;
@@ -27,7 +27,7 @@ header{
 .curso_nome{
 	color:white;
 	position: relative;
-	border: 1px solid green;
+	border: 0px solid green;
 	text-align: center;
 	display: inline-block;
 	left: 200px;	
@@ -35,20 +35,22 @@ header{
 
 #nav_barra{
 	position: relative;
-	border: 1px solid green;
+	border: 0px solid green;
 	text-align: center;
-	height: 25px;
+	height: 20px;
 	background-color: #5a5f63;
 }
 
 #nav_lista{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:15px;
 	margin: 0px auto;
-	border: 1px solid white;
+	border: 0px solid white;
 	width: 960px;
 }
 
 .nav_itens{
-	border: 1px solid white;
+	border: 0px solid white;
 	display: inline;
 	color: white;
 	margin-right: 40px;
@@ -73,109 +75,129 @@ header{
 	color: white;	
 	}
 .nav_itens_lista_sistemas:hover {
-	background-color: grey;
+	background-color: #aebabf;
 	}
 #nav_lista li:nth-child(2):hover ul {
     display: block;
+	background-color: #747c80;
 }
 #nav_lista li:nth-child(3):hover ul {
     display: block;
+	background-color: #747c80;
 }
 #nav_lista li:nth-child(4):hover ul {
     display: block;
+	background-color: #747c80;
 }
 #nav_lista li:nth-child(5):hover ul {
     display: block;
+	background-color: #747c80;
 }
 
 #conteudo {
 	position: relative;
-	border: 1px solid green;	
-	width: 1001px;
-	margin: 15px auto;
-	height: 675px;			
+	border: 0px solid green;	
+	width: 1000px;
+	margin: 10px auto;
+	height: 640px;
+					
 	}
 #coluna_lateral {	
 	background-color: #d5d5d5;	
 	width: 125px;
 	float: left;
-	height: 673px;	
+	height: 600px;
+	position: relative;			
 	}
 .coluna_lista {
 	list-style-type: none;
-	display: block;
-	position: relative;
-	margin: 71px 0px 0px -40px;	
-	}
-.coluna_item {
 	width: 125px;
-	height: 111px;
-	display: block;
-	border: 1px solid grey;	
-	margin: 0px 0px -16px 0px;	
+	position: relative;
+	margin: 0px auto;
+	top: 0px;			
+	}
+.coluna_item {			
 	position: relative;
 	background-color: #e7e7e7;
 	text-align: center;
-	vertical-align: middle;		
+	height: 100px;
+	line-height: 100px;		
 	}
 .coluna_item:hover{
-	background-color: #d5d5d5;
-	}
-#sistema_selecionado {
-	background-color: #e7e7e7;
-	border: 1px solid grey;	;
-	width: 125px;
-	height: 70px;
-	position: absolute;
-	z-index:98;		
+	background-color: #d5d5d5;		
 	}
 #sistema_conjuntos {
-	background-color: #d5d5d5;
+	background-color: black;
 	margin: 0px auto;
-	width: 850px;
-	height: 70px;
-	display: inline-block;
-			
+	width: 1000px;
+	height: 40px;		
+	border: 0px solid black;
+	display: static;
+	font-size: 0px;
+	position:relative;
+	line-height:40px;		
 	}
-	
-#sistema_lista{
-	margin: 0px 0px 0px -40px;
-	display: inline-block;	
-	position: relative;	
-	}
+#sistema_selecionado {
+	width: 127px;
+	background-color: olive;
+	height: 40px;
+	text-align: center;
+	position: relative;
+	float: left;
+	font-size:16px;			
+	}	
 	
 .sistema_unidade{
-	width: 200px;
-	height: 70px;
-	margin: 0px -4px 0px 0px;
-	display: inline-block;
+	width: 291px;
+	height: 40px;
+	margin: 0px 0px 0px 0px;
+	float:left;
 	background-color: #e7e7e7;
 	position: relative;
 	text-align: center;
-	border: 1px solid grey;		
+	font-size:16px;		
 	}
-.sistema_unidade:hover{
+	
+.img_sistema_unidade{
+	background-color: #e7e7e7;
+	
+	}	
+.img_sistema_unidade:hover{
 	background-color: #d5d5d5;
 	}
-.img_selecionada {
-	width: 870px;
-	height: 480px;
-	border: 3px solid black;
-	position: relative;
-	left: 2px;
-	top: 2px		
+.album {
+	width: 875px;
+	display:inline-block;	
 	}
-#img_album{	
-	height: 110px;
+.img_destaque{
+	position:relative;
+	display:inline-block;
+	
+	width: 875px;
+	height: 500px;
+	background-color: #d5d5d5;
+	
+	}
+.img_selecionada {
+	width: 865px;
+	height: 490px;
+	border: 5px solid black;
+	position: relative;
+	display:inline-block;
+			
+	}
+.img_album{
+	width: 875px;	
+	height: 100px;
 	overflow-x: scroll;
 	overflow-y: hidden;
 	position: relative;
-	left: 2px;
-	top: 1px;
+	top: 0px;
+	
 	}
 .img_item_album {
-	width: 110px;
-	height: 110px;
+	width: 100px;
+	height: 100px;
 	display: inline;	
 	}
 #side_scroll_button_left{
