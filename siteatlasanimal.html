@@ -6,6 +6,7 @@
 	<meta name="keywords" content="esqueletos, animais, bovino, atlas, veterinária, estudo">
   <meta name="description" content="atlas veterinário para estudantes e professores">
 	<link rel="stylesheet" href="stylesatlas.css"/>
+		<script src="jquery-2.2.1.min.js"></script>
 </head>
 <body>
 	<header>
@@ -62,31 +63,100 @@
 			<div id="sistema_unidade"><a href="link"><img class="img_sistema_unidade" src="img/sistema_unidades_ligamentos.png" alt="sistema unidade"></a></div>
 		</div>
 	  <div id="coluna_lateral">
-	    <div class="coluna_item"><a href="link"><img class="img_coluna_item" src="img/coluna_item_cranio.png" alt="sistema unidade"></a></div>
-	    <div class="coluna_item"><a href="link"><img class="img_coluna_item" src="img/coluna_item_costela.png" alt="sistema unidade"></a></div>
-	    <div class="coluna_item"><a href="link"><img class="img_coluna_item" src="img/coluna_item_membrotoraxico.png" alt="sistema unidade"></a></div>
-	    <div class="coluna_item"><a href="link"><img class="img_coluna_item" src="img/coluna_item_membropelvico.png" alt="sistema unidade"></a></div>
-	    <div class="coluna_item"><a href="link"><img class="img_coluna_item" src="img/coluna_item_colunavertebral.png" alt="sistema unidade"></a></div>
-	    <div class="coluna_item"><a href="link"><img class="img_coluna_item" src="img/coluna_item_esterno.png" alt="sistema unidade"></a></div>
+	    <div class="coluna_item"><a href="javascript:void(0)" id="0"  class="link_part" ><img class="img_coluna_item" src="img/coluna_item_cranio.png" alt="sistema unidade"></a></div>
+	    <div class="coluna_item"><a href="javascript:void(0)" id="1" class="link_part" ><img class="img_coluna_item" src="img/coluna_item_costela.png" alt="sistema unidade"></a></div>
+	    <div class="coluna_item"><a href="javascript:void(0)" id="2"  class="link_part" ><img class="img_coluna_item" src="img/coluna_item_membrotoraxico.png" alt="sistema unidade"></a></div>
+	    <div class="coluna_item"><a href="javascript:void(0)" id="3" class="link_part"  ><img class="img_coluna_item" src="img/coluna_item_membropelvico.png" alt="sistema unidade"></a></div>
+	    <div class="coluna_item"><a href="javascript:void(0)" id="4" class="link_part"  ><img class="img_coluna_item" src="img/coluna_item_colunavertebral.png" alt="sistema unidade"></a></div>
+	    <div class="coluna_item"><a href="javascript:void(0)" id="5" class="link_part"  ><img class="img_coluna_item" src="img/coluna_item_esterno.png" alt="sistema unidade"></a></div>
 		</div>
 	  <div class="album">
-			<div class="img_destaque"><img class="img_selecionada" src="img/Imagens.atlas.animal/cranio/cranio4.jpg" alt="imagem selecionada"></div>
+			<div class="img_destaque"><img id="img_selecionada" src="img/Imagens.atlas.animal/cranio/cranio4.jpg" alt="imagem selecionada"></div>
 	    <div class="img_album">
-	      <div class="side_scroll_button" id="side_scroll_button_left"></div>
-				<img class="img_item_album" src="img/Imagens.atlas.animal/cranio/cranio1.jpg" alt="imagem album">
-	      <img class="img_item_album" src="img/Imagens.atlas.animal/cranio/cranio2.jpg" alt="imagem album">
-	      <img class="img_item_album" src="img/Imagens.atlas.animal/cranio/cranio3.jpg" alt="imagem album">
-	      <img class="img_item_album" src="img/Imagens.atlas.animal/cranio/cranio4.jpg" alt="imagem album">
-	      <img class="img_item_album" src="img/Imagens.atlas.animal/cranio/cranio5.jpg" alt="imagem album">
-	      <img class="img_item_album" src="img/Imagens.atlas.animal/cranio/cranio6.jpg" alt="imagem album">
-	      <img class="img_item_album" src="img/Imagens.atlas.animal/cranio/cranio7.jpg" alt="imagem album">
-				<img class="img_item_album" src="img/Imagens.atlas.animal/cranio/cranio8.jpg" alt="imagem album">
-				<img class="img_item_album" src="img/Imagens.atlas.animal/cranio/cranio9.jpg" alt="imagem album">
-				<img class="img_item_album" src="img/Imagens.atlas.animal/cranio/cranio10.jpg" alt="imagem album">
+			      <div class="side_scroll_button" id="side_scroll_button_left"></div>
+				  
+				  <div class="carrousel">
+				<img class="img_item_album" id="1" src="img/Imagens.atlas.animal/cranio/cranio1.jpg" alt="imagem album">
+	      <img class="img_item_album" id="2" src="img/Imagens.atlas.animal/cranio/cranio2.jpg" alt="imagem album">
+	      <img class="img_item_album" id="3" src="img/Imagens.atlas.animal/cranio/cranio3.jpg" alt="imagem album">
+	      <img class="img_item_album" id="4" src="img/Imagens.atlas.animal/cranio/cranio4.jpg" alt="imagem album">
+	      <img class="img_item_album" id="5" src="img/Imagens.atlas.animal/cranio/cranio5.jpg" alt="imagem album">
+	      <img class="img_item_album" id="6" src="img/Imagens.atlas.animal/cranio/cranio6.jpg" alt="imagem album">
+	      <img class="img_item_album" id="7" src="img/Imagens.atlas.animal/cranio/cranio7.jpg" alt="imagem album">
+				<img class="img_item_album" id="8" src="img/Imagens.atlas.animal/cranio/cranio8.jpg" alt="imagem album">
+				<img class="img_item_album" id="9"src="img/Imagens.atlas.animal/cranio/cranio9.jpg" alt="imagem album">
+				<img class="img_item_album" id="10" src="img/Imagens.atlas.animal/cranio/cranio10.jpg" alt="imagem album">
+				<img class="img_item_album" id="11" src="img/Imagens.atlas.animal/cranio/cranio11.jpg" alt="imagem album">
+				
+				</div>
 	      <div class="side_scroll_button" id="side_scroll_button_right"></div>
 	    </div>
 	 	</div>
 	</div>
 	<footer id="rodape">  Copyright &copy; 2016 - by Equipe TIS I </footer>
-</body>
+
+	
+	<script>
+	
+	
+	$('.link_part').on("click",function(){
+	
+	var id  = $(this).attr('id');
+	
+	var pos = 0;
+
+	switch(id){
+	
+	case '0':
+
+	$('#img_selecionada').attr('style','background-image:url("Crânio085.jpg");background-size:cover;');
+
+	
+	break;
+	
+	
+	
+	
+	}
+	
+	
+	
+	
+	});
+	
+
+	
+	$('.img_item_album').on("click",function(){
+	
+	var id  = $(this).attr('id');
+
+    $('#img_selecionada').attr('src','img/Imagens.atlas.animal/cranio/cranio'+id+'.jpg');
+	
+	});
+	
+	
+	
+	$('#side_scroll_button_right').click(function() {
+	
+    var pos = $('.carrousel').scrollLeft() + 150;
+ 
+	 $('.carrousel').animate( { scrollLeft: pos }, 1000);
+	
+	
+   });
+
+
+	$('#side_scroll_button_left').click(function() {
+	
+    var pos = $('.carrousel').scrollLeft() - 150;
+  	 $('.carrousel').animate( { scrollLeft: pos }, 1000);
+	
+	
+   });
+
+	</script>
+	
+	
+	
+	</body>
 </html>

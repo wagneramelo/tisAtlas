@@ -201,39 +201,57 @@ a:active {
 	background-color: #d5d5d5;
 
 	}
-.img_selecionada {
+#img_selecionada {
 	width: 865px;
 	height: 490px;
 	border: 5px solid black;
 	position: relative;
 	display:inline-block;
-
 	}
+	
+	
 .img_album{
 	width: 875px;
 	height: 100px;
-	overflow-x: scroll;
-	overflow-y: hidden;
+	display:block;
+    
 	position: relative;
 	top: 0px;
 
 	}
-.img_item_album {
-	width: 100px;
+	.carrousel{
+	width: 845px;
 	height: 100px;
-	display: inline;
+	display:flex;
+	overflow-x: hidden;
+	overflow-y: hidden;
+
+	top: 0px;
+	}
+	
+	
+.img_item_album {
+
+	height: 100px;
+
+	margin-right:10px;
+	cursor: pointer;
 	}
 #side_scroll_button_left{
 	position: absolute;
 	width: 30px;
-	height: 110px;
+	height: 100px;
+	left:0px;
+	top:0px;
+	cursor: pointer;
 	}
 #side_scroll_button_right{
 	position: absolute;
 	width: 30px;
-	height: 110px;
+	height: 100px;
 	left: 845px;
 	top: 0px;
+	cursor: pointer;
 
 	}
 .side_scroll_button{
