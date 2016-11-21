@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- As 3 tags metas acima *devem* vir em primeiro lugar dentro do `head`; qualquer outro conteúdo deve vir *após* essas tags -->
+    <meta http-equiv="Content-Language" content="pt-br, en">
+    <meta name="keywords" content="esqueletos, animais, bovino, atlas, veterinária, estudo">
+    <meta name="description" content="atlas veterinário para estudantes e professores">
+    <meta name="author" content="Equipe TIS ATLAS ANIMA - Segunda turma Engenharia de Software PUC MINAS - Praça da Liberdade.">
+    <title>Atlas Animal 2</title>
+    <!-- CSS do Bootstrap-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS Atlas Animal -->
+    <link href="css/atlasanimal.css" rel="stylesheet">
+		<link rel="stylesheet" href="stylesatlas.css"/>
+		<script src="jquery-2.2.1.min.js"></script>
+  </head>
+
+  <body>
+    <div class="col-ls-12 text-center header">
+      <img src="img/logo_white.png" alt="img_logo">
+      <h2>  PUC Minas - Medicina Veterinária </h2>
+    </div>
+    <!-- Barra de navegação -->
+    <nav class="navbar navbar-default navbar-static-top ">
+      <div class="container">
+        <div class="navbar-header">  <!-- Icone com itens da barra de navegação que aparecerá quando tela ficar menor-->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Alterar navegação</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse "> <!-- Itens da barra de navegação -->
+
+          <ul class="nav navbar-nav "> <!-- Itens da barra de navegação -->
+            <li><a href="index.html">Home</a></li>
+
+            <li class="dropdown active"> <!-- Itens navegação - BOVINO-->
+              <a href="bovino.html" class="dropdown-toggle" data-toggle="dropdown">Bovino <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="bovino_sistema_esqueletico.html">Sistema Esquelético</a></li>
+                <li><a href="bovino_sistema_digestorio.html">Sistema Digestório</a></li>
+                <li><a href="bovino_sistema_circulatorio.html">Sistema Circulatório</a></li>
+                <li><a href="bovino_sistema_nervoso.html">Sistema Nervoso</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown"> <!-- Itens navegação - EQUINO-->
+              <a href="equino.html" class="dropdown-toggle" data-toggle="dropdown">Equino <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="equino_sistema_esqueletico.html">Sistema Esquelético</a></li>
+                <li><a href="equino_sistema_digestorio.html">Sistema Digestório</a></li>
+                <li><a href="equino_sistema_circulatorio.html">Sistema Circulatório</a></li>
+                <li><a href="equino_sistema_nervoso.html">Sistema Nervoso</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown"> <!-- Itens navegação - FELINO-->
+              <a href="felino.html" class="dropdown-toggle" data-toggle="dropdown">Felino <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="felino_sistema_esqueletico.html">Sistema Esquelético</a></li>
+                <li><a href="felino_sistema_digestorio.html">Sistema Digestório</a></li>
+                <li><a href="felino_sistema_circulatorio.html">Sistema Circulatório</a></li>
+                <li><a href="felino_sistema_nervoso.html">Sistema Nervoso</a></li>
+              </ul>
+            </li>
+
+						<li class="dropdown"><!-- Itens navegação - CANÍDEO-->
+				    		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Canídeo <span class="caret"></span> </a>
+				      <ul class="dropdown-menu">
+                <li><a href="canideo_sistema_esqueletico.html">Sistema Esquelético</a></li>
+                <li><a href="canideo_sistema_digestorio.html">Sistema Digestório</a></li>
+                <li><a href="canideo_sistema_circulatorio.html">Sistema Circulatório</a></li>
+                <li><a href="canideo_sistema_nervoso.html">Sistema Nervoso</a></li>
+              </ul>
+            </li>
+
+            <li><a href="material.html">Materiais</a></li>
+            <li><a href="testes.html">Testes</a></li>
+            <li><a href="contato.html">Fale Conosco</a></li>
+          </ul>
+
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <!-- FIM Barra de navegação -->
+
+    <!-- Conteúdo da página -->
+    <div class="container">
+      <div class="col-lg-12">
+          <ol class="breadcrumb">
+            <li><a class="link" href="index.html">Home</a>  </li>
+            <li><a class="link" href="bovino.html">Bovino</a>  </li>
+            <li>Sistema Esquelético</li>
+          </ol>
+        </div>
+    </div>
+
+
+    <div class="conteudo">
+  		<div id="sistema_conjuntos">
+  	    <div id="sistema_selecionado"><img class="img_sistema_selecionado" src="img/sistema_escolhido_esqueletico.png" alt="sistema selecionado"></div>
+  	    <div class="sistema_unidade"><a href="link"><img class="img_sistema_unidade" src="img/sistema_unidades_ossos.png" alt="sistema unidade"></a></div>
+  			<div class="sistema_unidade"><a href="link"><img class="img_sistema_unidade" src="img/sistema_unidades_musculos.png" alt="sistema unidade"></a></div>
+  			<div id="sistema_unidade"><a href="link"><img class="img_sistema_unidade" src="img/sistema_unidades_ligamentos.png" alt="sistema unidade"></a></div>
+  		</div>
+  	  <div id="coluna_lateral">
+  	    <div class="coluna_item active"><a href="javascript:void(0)" id="0" class="link_part" ><img class="img_coluna_item" src="img/coluna_item_cranio.png" alt="sistema unidade"></a></div>
+  	    <div class="coluna_item"><a href="javascript:void(0)" id="1" class="link_part" ><img class="img_coluna_item" src="img/coluna_item_costela.png" alt="sistema unidade"></a></div>
+  	    <div class="coluna_item"><a href="javascript:void(0)" id="2" class="link_part" ><img class="img_coluna_item" src="img/coluna_item_membrotoraxico.png" alt="sistema unidade"></a></div>
+  	    <div class="coluna_item"><a href="javascript:void(0)" id="3" class="link_part" ><img class="img_coluna_item" src="img/coluna_item_membropelvico.png" alt="sistema unidade"></a></div>
+  	    <div class="coluna_item"><a href="javascript:void(0)" id="4" class="link_part" ><img class="img_coluna_item" src="img/coluna_item_colunavertebral.png" alt="sistema unidade"></a></div>
+  	    <div class="coluna_item"><a href="javascript:void(0)" id="5" class="link_part" ><img class="img_coluna_item" src="img/coluna_item_esterno.png" alt="sistema unidade"></a></div>
+  	  </div>
+  	  <div class="album">
+  			<div class="img_destaque"><img class="img_selecionada" src="img/albumM/0/main.png" alt="imagem selecionada"></div>
+  	    <div class="img_album">
+  			      <div class="side_scroll_button" id="side_scroll_button_left"><img class="img_seta_album" src="img/seta_album_left.png" alt="seta album"></div>
+  				  <div class="carrousel">
+                      <img class="img_item_album" id="a01" src="img/albumP/0/p(a01).png" alt="imagem album">
+                      <img class="img_item_album" id="a02" src="img/albumP/0/p(a02).png" alt="imagem album">
+                      <img class="img_item_album" id="a03" src="img/albumP/0/p(a03).png" alt="imagem album">
+                      <img class="img_item_album" id="a04" src="img/albumP/0/p(a04).png" alt="imagem album">
+                      <img class="img_item_album" id="a05" src="img/albumP/0/p(a05).png" alt="imagem album">
+                      <img class="img_item_album" id="a06" src="img/albumP/0/p(a06).png" alt="imagem album">
+                      <img class="img_item_album" id="a07" src="img/albumP/0/p(a07).png" alt="imagem album">
+                      <img class="img_item_album" id="a08" src="img/albumP/0/p(a08).png" alt="imagem album">
+                      <img class="img_item_album" id="a09" src="img/albumP/0/p(a09).png" alt="imagem album">
+                      <img class="img_item_album" id="a10" src="img/albumP/0/p(a10).png" alt="imagem album">
+                      <img class="img_item_album" id="a11" src="img/albumP/0/p(a11).png" alt="imagem album">
+                      <img class="img_item_album" id="a12" src="img/albumP/0/p(a12).png" alt="imagem album">
+                      <img class="img_item_album" id="a13" src="img/albumP/0/p(a13).png" alt="imagem album">
+  				</div>
+  	      <div class="side_scroll_button" id="side_scroll_button_right"><img class="img_seta_album" src="img/seta_album_right.png" alt="seta album"></div>
+  	    </div>
+  	 	</div>
+  	</div>
+	  <!-- FIM Conteúdo da página -->
+
+
+
+		<!-- Rodapé -->
+		<footer class="footer">
+			<div class="container">
+				<p class="text-muted"> Copyright &copy; 2016 - by Equipe TIS Atlas Animal  </p>
+			</div>
+		</footer>
+		<!-- FIM Rodapé -->
+
+
+							<!-- ====================== Bootstrap core JavaScript============================ -->
+							<!-- Colocado no final do documento para que as páginas sejam carregadas mais rapidamente -->
+							<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+							<script>window.jQuery || document.write('<script src="js//jquery.min.js"><\/script>')</script>
+							<script src="js/bootstrap.min.js"></script>
+
+	</body>
+	</html>
+
+
+	<script>
+
+var albumP = [
+
+/* pasta 0 Cranio */	['p(a01).png','p(a02).png','p(a03).png','p(a04).png','p(a05).png','p(a06).png','p(a07).png','p(a08).png','p(a09).png','p(a10).png','p(a11).png','p(a12).png','p(a13).png'],
+/* pasta 1 Costela*/	['p(a01).png','p(a02).png','p(a03).png'],
+/* pasta 2 Membro tor*/	['p(a01).png','p(a02).png'],
+/* pasta 3 Membro pel*/	['p(a01).png','p(a02).png'],
+/* pasta 4 Coluna ver*/	['p(a01).png','p(a02).png'],
+/* pasta 5 Esterno   */	['p(a01).png','p(a02).png']
+
+	];
+
+var albumM = [
+
+/* pasta 0 Cranio */	['main.png'],
+/* pasta 1 Costela*/	['main.png'],
+/* pasta 2 Membro tor*/	['main.png'],
+/* pasta 3 Membro pel*/	['main.png'],
+/* pasta 4 Coluna ver*/	['main.png'],
+/* pasta 5 Esterno   */	['main.png']
+
+	];
+
+var albumG = [
+
+/* pasta 0 Cranio */	['g(a01).png','g(a02).png','g(a03).png','g(a04).png','g(a05).png','g(a06).png','g(a07).png','g(a08).png','g(a09).png','g(a10).png','g(a11).png','g(a12).png','g(a13).png'],
+/* pasta 1 Costela*/	['g(a01).png','g(a02).png'],
+/* pasta 2 Membro tor*/	['g(a01).png','g(a02).png'],
+/* pasta 3 Membro pel*/	['g(a01).png','g(a02).png'],
+/* pasta 4 Coluna ver*/	['g(a01).png','g(a02).png'],
+/* pasta 5 Esterno   */	['g(a01).png','g(a02).png']
+
+	];
+// FUNÇÃO 1
+	$('.carrousel').html('');
+
+	$('#img_selecionada').attr('src','img/albumM/0/main.png');
+
+    for (index = 0; index < albumP[0].length; ++index) {
+	var idName = "a";
+	var idNumber = "0";
+	var addNumber = index + 1;
+
+	if ( index < 9) {
+	var res = idName.concat(idNumber,addNumber);
+	$('.carrousel').append('<img class="img_item_album" id="'+res+'" src="img/albumP/'+0+'/'+albumP[0][index]+'" alt="imagem album">');
+	}
+	if ( index >= 9) {
+	var res = idName.concat(addNumber);
+	$('.carrousel').append('<img class="img_item_album" id="'+res+'" src="img/albumP/'+0+'/'+albumP[0][index]+'" alt="imagem album">');
+	}
+	}
+// FIM FUNÇÃO 1
+
+// FUNÇÃO 2
+	$('.link_part').on("click",function(){
+
+	var colID  = $(this).attr('id');
+
+	$('.link_part').parent().removeClass('active');
+
+	$(this).parent().addClass('active');
+
+	var pos = 0;
+// FIM FUNÇÃO 2
+
+// FUNÇÃO 3
+    $('.carrousel').html('');
+
+	$('.img_selecionada').attr('src','img/albumM/'+colID+'/main.png');
+
+    for (index = 0; index < albumP[colID].length; ++index) {
+	var idName = "a";
+	var idNumber = "0";
+	var addNumber = index + 1;
+	if ( index < 9) {
+	var res = idName.concat(idNumber,addNumber);
+	$('.carrousel').append('<img class="img_item_album" id="'+res+'" src="img/albumP/'+colID+'/'+albumP[colID][index]+'" alt="imagem album">');
+	}
+	if ( index >= 9) {
+	var res = idName.concat(addNumber);
+	$('.carrousel').append('<img class="img_item_album" id="'+res+'" src="img/albumP/'+colID+'/'+albumP[colID][index]+'" alt="imagem album">');
+	}
+	}
+
+	});
+// FIM FUNÇÃO 3
+
+// FUNÇÃO 4
+	$('.img_item_album').on("click",function(){
+
+	var colID  = document.getElementsByClassName('active')[0].id;
+	console.log(colID);
+	var imgAlbum  = $(this).attr('id');
+
+	$('.img_selecionada').attr('src','img/albumG/0/g('+imgAlbum+').png');
+
+	});
+
+	$('#side_scroll_button_right').click(function() {
+
+    var pos = $('.carrousel').scrollLeft() + 150;
+
+	$('.carrousel').animate( { scrollLeft: pos }, 1000);
+
+   });
+
+	$('#side_scroll_button_left').click(function() {
+
+    var pos = $('.carrousel').scrollLeft() - 150;
+  	 $('.carrousel').animate( { scrollLeft: pos }, 1000);
+
+   });
+   // FIM FUNÇÃO 4
+	</script>

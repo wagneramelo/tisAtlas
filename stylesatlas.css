@@ -1,144 +1,41 @@
-body {
-	margin: 0;
-	padding: 0;
-	background-color: #e7d1b9;
-	}
-header{
-	height: 100px;
-	background-color: #e4801e;
-	position: relative;
-}
-#header_container{
-	margin: 0px auto;
-	width: 1000px;
-	height: 80px;
-	position: relative;
-	border: 0px solid green;
-	}
-#img_logo{
-	height: 70px;
-	width: 70px;
-	border: 0px solid green;
-	position: relative;
-	float: left;
-	left: 100px;
-	top: 4px;
-	}
-.curso_nome{
-	color:white;
-	position: relative;
-	border: 0px solid green;
-	text-align: center;
-	display: inline-block;
-	left: 200px;
-}
 
-#nav_barra{
-	position: relative;
-	border: 0px solid green;
-	text-align: center;
-	height: 20px;
-	background-color: #5a5f63;
-}
-
-#nav_lista{
-	font-family: Arial, Helvetica, sans-serif;
-	font-size:15px;
-	margin: 0px auto;
-	border: 0px solid white;
-	width: 960px;
-	color: white;
-}
-.nav_itens{
-	display: inline;
-	margin-right: 40px;
-	position: relative;
-}
-.nav_link{
-	color: white;
-	text-decoration: none;
-}
-
-.nav_itens_lista {
-	display: none;
-	background-color: black;
-	left: -60px;
-	width: 150px;
-    padding: 10px;
-	position:absolute;
-	list-style-type: none;
-	z-index: 99;
-	color: white;
-}
-.nav_itens_lista_sistemas {
-	margin: 10px auto;
-	}
-.nav_itens_lista_sistemas a {
-	text-decoration: none;
-	color: white;
-	}
-
-.nav_itens_lista_sistemas:hover {
-	background-color: #aebabf;
-	}
-#nav_lista li:nth-child(2):hover ul {
-    display: block;
-	background-color: #747c80;
-}
-#nav_lista li:nth-child(3):hover ul {
-    display: block;
-	background-color: #747c80;
-}
-#nav_lista li:nth-child(4):hover ul {
-    display: block;
-	background-color: #747c80;
-}
-#nav_lista li:nth-child(5):hover ul {
-    display: block;
-	background-color: #747c80;
-}
-
-.conteudo {
+.conteudo {/* Definicoes da area de conteudo - todas as paginas*/
 	position: relative;
 	border: 0px solid green;
 	width: 1000px;
-	margin: 10px auto;
+	margin: 1px auto;
 	height: 640px;
-	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
-	}
-#conteudo_cadastro {
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
 
-	position: relative;
-	border: 0px solid green;
-	width: 1000px;
-	margin: 10px auto;
-	height: 640px;
-		}
-#coluna_lateral {
+
+	}
+#coluna_lateral {/* Definicoes da largura e altura da coluna lateral no conteudo(partes do animal referente ao sistema selecionado - pagina animais)*/
 	background-color: #d5d5d5;
 	width: 125px;
 	float: left;
 	height: 600px;
 	position: relative;
 	}
-.coluna_lista {
+.coluna_lista {/* Definicoes da lista na coluna lateral no conteudo(partes do animal referente ao sistema selecionado - pagina animais)*/
 	list-style-type: none;
 	width: 125px;
 	position: relative;
 	margin: 0px auto;
 	top: 0px;
 	}
-.coluna_item {
+.coluna_item {/* Definicoes dos itens da lista da coluna lateral no conteudo(partes do animal referente ao sistema selecionado - pagina animais)*/
 	position: relative;
 	background-color: #e7e7e7;
 	text-align: center;
 	height: 100px;
 	line-height: 100px;
 	}
-.coluna_item:hover{
+.coluna_item:hover{/* Definicoes para mudanca do fundo quando mouse passar nos itens da lista da coluna lateral no conteudo(partes do animal referente ao sistema selecionado - pagina animais)*/
 	background-color: #d5d5d5;
 	}
-#sistema_conjuntos {
+.active{  background-color: #d5d5d5; }
+
+#sistema_conjuntos {/* Definicoes dos conjuntos do sistema selecionado ( ex: ossos, musculos, ligamentos - pagina animais)*/
 	background-color: black;
 	margin: 0px auto;
 	width: 1000px;
@@ -147,9 +44,9 @@ header{
 	display: static;
 	font-size: 0px;
 	position:relative;
-	line-height:40px;
+	line-height:35px;
 	}
-#sistema_selecionado {
+#sistema_selecionado {/* Definicoes do div onde descreve o sistema selecionado (ex: sistema esqueletico,sistema digestorio , sistema nervoso) - pagina animais*/
 	width: 127px;
 	background-color: olive;
 	height: 40px;
@@ -158,8 +55,7 @@ header{
 	float: left;
 	font-size:16px;
 	}
-
-.sistema_unidade{
+.sistema_unidade{/* Definicoes de cada conjunto do sistema selecionado ( ex: ossos, musculos, ligamentos - pagina animais) - pagina animais*/
 	width: 291px;
 	height: 40px;
 	margin: 0px 0px 0px 0px;
@@ -169,47 +65,41 @@ header{
 	text-align: center;
 	font-size:16px;
 	}
-
-.img_sistema_unidade{
+.img_sistema_unidade{/* Definicoes do fundo de cada conjunto do sistema selecionado ( ex: ossos, musculos, ligamentos - pagina animais)*/
 	background-color: #e7e7e7;
-
 	}
-.img_sistema_unidade:hover{
+.img_sistema_unidade:hover{/* Definicoes para quando o mouse passar por cada conjunto do sistema selecionado ( ex: ossos, musculos, ligamentos - pagina animais)*/
 	background-color: #d5d5d5;
 	}
-.album {
+.album {/* Definicoes do album ( contem a imagem de destaque do album, e o carrousel de imagens do album - pagina animais)*/
 	width: 875px;
 	display:inline-block;
 	position:relative;
 	}
-.img_destaque{
+.img_destaque{/* Definicoes para area destaque para a imagem selecionada do album ( contem a imagem de destaque do album, e o carrousel de imagens do album - pagina animais)*/
 	position:relative;
 	display:inline-block;
-
 	width: 875px;
 	height: 500px;
-	background-color: #d5d5d5;
+	background-color: black;
+	text-align: center;
 
 	}
-#img_selecionada {
+.img_selecionada {/* Definicoes para imagem selecionada do album ( contem a imagem de destaque do album, e o carrousel de imagens do album - pagina animais)*/
 	width: 865px;
 	height: 490px;
 	border: 5px solid black;
 	position: relative;
 	display:inline-block;
 	}
-
-
-.img_album{
+.img_album{/* Definicoes para o div do album de imagens ( contem o carrousel de imagens do album e os botoes de rolagem - pagina animais)*/
 	width: 875px;
 	height: 100px;
 	display:block;
-
 	position: relative;
 	top: -4px;
-
 	}
-.carrousel{
+.carrousel{/* Definicoes para o carrousel de imagens do album( contem o carrousel de imagens do album - pagina animais)*/
 	width: 875px;
 	height: 100px;
 	display:flex;
@@ -219,16 +109,12 @@ header{
 	top: 0px;
 	background-color: black;
 	}
-
-
-.img_item_album {
-
+.img_item_album {/* Definicoes para as imagens contidas no carrousel de imagens do album( contem o carrousel de imagens do album - pagina animais)*/
 	height: 100px;
-
 	margin-right:5px;
 	cursor: pointer;
 	}
-#side_scroll_button_left{
+#side_scroll_button_left{/* Definicoes para botoes de rolagem do carrousel de imagens do album - pagina animais)*/
 	position: absolute;
 	width: 30px;
 	height: 100px;
@@ -237,7 +123,7 @@ header{
 	cursor: pointer;
 	z-index:99;
 	}
-#side_scroll_button_right{
+#side_scroll_button_right{/* Definicoes para botoes de rolagem do carrousel de imagens do album - pagina animais)*/
 	position: absolute;
 	width: 30px;
 	height: 100px;
@@ -245,96 +131,96 @@ header{
 	top: 0px;
 	cursor: pointer;
 	z-index:99;
-
 	}
-.side_scroll_button{
-
-
-	}
-footer{
+.rodape{/* Definicoes para o footer no final da pagina - todas as paginas)*/
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
 	background-color: rgb(226,128,46);
 	width: 100%;
-	text-align: center;
-	padding: 15px 0 15px 0;
-}
-#login {
-	text-align: right;
-	margin-right: 40px;
-	border: 5px solid none;
-	font-family: verdana;
-	font-size: 11px;
-}
-#image {
-	position: center;
-	float: center;
-}
-
-#conteudo_home {
-	font-size: 17px;
-	margin-right: 40px;
-	text-align: center;
-}
-#gifprin {
 	position: relative;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
 }
-#cadastro {
+.area_de_login {
+	width: 1000px;
+	height: 100px;
+	display: inline-block;
+	text-align: center;
+	position: relative;
+	}
+.area_de_login p {
+	text-align: center;
+	line-height: 30px;
+	margin: 0px auto;
+	position: relative;
+	width: 800px;
+	}
+.area_de_login label{
+	margin: 0px auto;
+	position: relative;
+	border-color: 1px solid black;
+	}
+.home_boas_vindas{/* Definicoes da area de conteudo - pagina home*/
+	position: relative;
+	border: 0px solid green;
+	width: 350px;
+	height: 300px;
+	line-height: 22px;
+	margin: 0px auto;
+	left: 150px;
+	text-align:center;
+	font-size: 16px;
+	}
+.home_boas_vindas h2{/* Definicoes do cabecalho da mensagem de boas vindas da area de conteudo - pagina home*/
+	position: relative;
+	width: 350px;
+	margin: 0px auto;
+	}
+.home_boas_vindas h3{/* Definicoes do cabecalho da mensagem de boas vindas da area de conteudo - pagina home*/
+	position: relative;
+	width: 350px;
+	margin: 0px auto;
+}
+.home_boas_vindas p {
+	position: relative;
+	width: 350px;
+	margin: 0px auto;
+	}
+.area_de_cadastro{
 	position: relative;
 	border: 0px solid green;
 	width: 300px;
-	margin: 25px 100px 200px 100px;
-	float: left;
 	height: 300px;
+	margin: 0px auto;
+	float: left;
 	text-align: center;
 	background-color: #FFEBCD;
+	left: 100px;
 }
-
-#equino {
-	text-align: center;
-	font-size: 18px;
-
-}
-
-
-#felino {
-	text-align: center;
-	font-size: 18px;
-
-}
-#canideo {
-	text-align: center;
-	font-size: 18px;
-
-}
-#material {
-	text-align: center;
-	font-size: 18px;
-
-}
-#testes {
-	text-align: center;
-	font-size: 18px;
-
-}
-
-#faleconosco {
-	text-align: center;
-	font-size: 15px;
-
-}
-#login {
-	width: 1000px;
-	height: 50px;
-	display: inline;
-	text-align: center;
-	margin: 0px auto;
+.area_de_cadastro h2{
 	position: relative;
-	left:0px;
-	margin-bottom: 50px;
+	width: 300px;
+	height: 30px;
+	margin: 0px auto;
+	line-height: 30px;
+	top: 20px;
+	padding-bottom: 70px;
 	}
-#login p {
-	text-align: center;
-	margin: 0px auto;
+.area_de_cadastro p{
 	position: relative;
+	width: 300px;
+	line-height: 35px;
+	margin: 0px auto;
+	text-align:right;
+	right: 55px;
+	}
+.erro_404{
+	position: relative;
+	text-align: center;
+	}
 
+.img_erro_404 {
+	position: relative;
+	margin: 0px auto;
 
 	}

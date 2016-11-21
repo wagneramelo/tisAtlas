@@ -1,0 +1,83 @@
+body {
+  /*min-height: 2000px;*/
+  font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+  background-color: rgb(231, 209, 185);
+}
+div.header  {/* Definicoes do cabeçalho ( barra superior laranja) - todas as paginas*/
+	background-color: #e4801e;
+  color: white;
+}
+.header>h2{ /* Definições do título do cabeçalho (barra superior laranja) */
+  display: inline;
+  text-align: center;
+}
+.do.navbar-static-top, .dropdown-menu, .navbar {/* Definições linha de navegação*/
+  background-color:rgb(93, 98, 102);
+  color: white;
+}
+.navbar-default { /* Borda linha navegação dispositivos com tela grande */
+  border-color:#b7b7b7;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form { /* Borda linha navegação dispositivos pequenos (toggle)*/
+    border-color: #e7e7e7;
+    box-shadow: #e7e7e7;
+}
+
+.navbar-default .navbar-nav>li>a { /* Definições fonte itens da da barra de navegação dispositivo grande*/
+    font-size: 15px;
+    color: white;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover { /* Definição fonte itens barra de navegação selecionados*/
+    color: black;
+    background-color: #b7b7b7;
+
+}
+.navbar-default .navbar-nav .open .dropdown-menu>li>a { /* Definições fonte itens da da barra de navegação dispositivo pequenos*/
+  color: white;
+}
+
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: black;
+    background-color: #b7b7b7;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    color: white;
+}
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:focus, .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+    color: black;
+
+}
+a.list-group-item:focus, a.list-group-item:hover, button.list-group-item:focus, button.list-group-item:hover { /* Definições blocos com sistemass*/
+    color: #555;
+    text-decoration: none;
+    background-color: #b7b7b7;
+}
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+  border-color: #a94442;
+  background-color: #a94442;
+}
+/* -------------------------- Bootstrap Footer -------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 50px;
+  background-color: #e4801e;
+}
+
+.text-muted {
+  margin: 10px 0;
+  color: black;
+  text-align: center;
+}
