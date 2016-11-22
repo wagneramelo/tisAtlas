@@ -23,6 +23,6 @@ function REGISTRO() {
     }
 
     else {
-      alert("Preencha o campo vazio");
+      alert("Verifique se todos os campos estão preenchidos");
     }
 }
