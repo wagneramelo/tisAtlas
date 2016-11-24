@@ -33,7 +33,7 @@
 .coluna_item:hover{/* Definicoes para mudanca do fundo quando mouse passar nos itens da lista da coluna lateral no conteudo(partes do animal referente ao sistema selecionado - pagina animais)*/
 	background-color: #d5d5d5;
 	}
-.active{  background-color: #d5d5d5; }
+.ativado{  background-color: #d5d5d5; }
 
 #sistema_conjuntos {/* Definicoes dos conjuntos do sistema selecionado ( ex: ossos, musculos, ligamentos - pagina animais)*/
 	background-color: black;
