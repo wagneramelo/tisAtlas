@@ -1,0 +1,55 @@
+function Resposta_teste(){
+  var resposta1=document.getElementById('resposta1').value;
+  var resposta2=document.getElementById('resposta2').value;
+  var resposta3=document.getElementById('resposta3').value;
+  var resposta4=document.getElementById('resposta4').value;
+  var resposta5=document.getElementById('resposta5').value;
+  resposta1=resposta1.toLowerCase();
+  resposta2=resposta2.toLowerCase();
+  resposta3=resposta3.toLowerCase();
+  resposta4=resposta4.toLowerCase();
+  resposta5=resposta5.toLowerCase();
+  resposta1=resposta1.trim();
+  resposta2=resposta2.trim();
+  resposta3=resposta3.trim();
+  resposta4=resposta4.trim();
+  resposta5=resposta5.trim();
+  if( (resposta1 != "") && (resposta2 != "") && (resposta3 != "") && (resposta4 != "") && (resposta5 != "")){
+    if( (resposta1 == "cabeça do úmero") && (resposta2 == "colo") && (resposta3== "tubérculo menor") && (resposta4== "tuberosidade redonda maior") && (resposta5 == "epicôndilo medial")){
+      alert("Parabés !!! Você acertou todas.")
+    }
+    if( (resposta1 != "cabeça do úmero") && (resposta2 != "colo") && (resposta3!= "tubérculo menor") && (resposta4!= "tuberosidade redonda maior") && (resposta5 != "epicôndilo medial")){
+      alert("Que pena. você não acertou nenhum questão.")
+    }
+    if( (resposta1 != "cabeça do úmero") && (resposta2 == "colo") && (resposta3== "tubérculo menor") && (resposta4== "tuberosidade redonda maior") && (resposta5 == "epicôndilo medial")){
+      alert("Você errou o numero 1.");
+      document.getElementById('resposta1').focus();
+    }
+    if( (resposta1 == "cabeça do úmero") && (resposta2 != "colo") && (resposta3== "tubérculo menor") && (resposta4== "tuberosidade redonda maior") && (resposta5 == "epicôndilo medial")){
+      alert("Você errou o numero 2.");
+      document.getElementById('resposta2').focus();
+    }
+    if( (resposta1 == "cabeça do úmero") && (resposta2 == "colo") && (resposta3!= "tubérculo menor") && (resposta4== "tuberosidade redonda maior") && (resposta5 == "epicôndilo medial")){
+      alert("Você errou o numero 3.");
+      document.getElementById('resposta3').focus();
+    }
+    if( (resposta1 == "cabeça do úmero") && (resposta2 == "colo") && (resposta3== "tubérculo menor") && (resposta4!= "tuberosidade redonda maior") && (resposta5 == "epicôndilo medial")){
+      alert("Você errou o numero 4.");
+      document.getElementById('resposta4').focus();
+    }
+    if( (resposta1 == "cabeça do úmero") && (resposta2 == "colo") && (resposta3== "tubérculo menor") && (resposta4== "tuberosidade redonda maior") && (resposta5 != "epicôndilo medial")){
+      alert("Você errou o numero 5.");
+      document.getElementById('resposta1').focus();
+    }
+    if( (resposta1 != "cabeça do úmero") && (resposta2 != "colo") && (resposta3== "tubérculo menor") && (resposta4== "tuberosidade redonda maior") && (resposta5 == "epicôndilo medial")){
+      alert("Você errou os números 1 e 2.");
+      document.getElementById('resposta1').focus();
+      document.getElementById('resposta1').focus();
+    }
+  }
+  else {
+    alert("Preencha os campos vazios!");
+  }
+
+
+}

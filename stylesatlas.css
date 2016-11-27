@@ -6,8 +6,6 @@
 	margin: 1px auto;
 	height: 640px;
 	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
-
-
 	}
 #coluna_lateral {/* Definicoes da largura e altura da coluna lateral no conteudo(partes do animal referente ao sistema selecionado - pagina animais)*/
 	background-color: #d5d5d5;
@@ -34,6 +32,11 @@
 	background-color: #d5d5d5;
 	}
 .ativado{  background-color: #d5d5d5; }
+.unidade_ativada{
+	background-color: #d5d5d5 !important;	
+	}
+
+
 
 #sistema_conjuntos {/* Definicoes dos conjuntos do sistema selecionado ( ex: ossos, musculos, ligamentos - pagina animais)*/
 	background-color: black;
@@ -90,6 +93,7 @@
 	height: 490px;
 	border: 5px solid black;
 	position: relative;
+	top: 5px;
 	display:inline-block;
 	}
 .img_album{/* Definicoes para o div do album de imagens ( contem o carrousel de imagens do album e os botoes de rolagem - pagina animais)*/
@@ -97,7 +101,7 @@
 	height: 100px;
 	display:block;
 	position: relative;
-	top: -4px;
+	top: 0px;
 	}
 .carrousel{/* Definicoes para o carrousel de imagens do album( contem o carrousel de imagens do album - pagina animais)*/
 	width: 875px;
@@ -132,5 +136,3 @@
 	cursor: pointer;
 	z-index:99;
 	}
-
-}

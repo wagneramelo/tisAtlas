@@ -3,13 +3,31 @@ body {
   background-color: rgb(231, 209, 185);
 }
 div.header  {/* Definicoes do cabeçalho ( barra superior laranja) - todas as paginas*/
-	background-color: #e4801e;
-  color: white;
+background-color: #e4801e;
+color: white;
+
 }
-.header>h2{ /* Definições do título do cabeçalho (barra superior laranja) */
-  display: inline;
-  text-align: center;
+#img_logo{/* Definicoes do logo da puc - todas as paginas*/
+	height: 60px;
+	width: 60px;
+	border: 0px solid green;
+	position: relative;
+	float: left;
+	left: 75px;
+	top: 0px;
 }
+.curso_nome{/* Definicoes do nome do curso - todas as paginas*/
+	color:white;
+	position: relative;
+	border: 0px solid green;
+	text-align: center;
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 35px;
+	font-weight: bold;
+	display: inline-block;
+	left: -50px;
+	top: 0px;
+	}
 
 .list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
     z-index: 2;

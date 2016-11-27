@@ -19,109 +19,108 @@
   <body>
     <!--CABEÇALH0 -->
     <div class="col-xs-12 col-sm-12 col-lg-12 text-center header">
-      <div class="col-xs-0 col-sm-3 col-lg-3" > </div>
-      <div class="col-xs-4 col-sm-1 col-lg-1" >
-        <img src="img/logo_white.png" alt="img_logo">
-      </div>
-      <div class="col-xs-8 col-sm-7 col-lg-5 " >
-          <h2>  PUC Minas - Medicina Veterinária </h2>
-      </div>
-      <div class="col-xs-0 col-sm-1 col-lg-3"> </div>
-    </div> <!-- FIM CABEÇALHO -->
+		<div class="col-xs-0 col-sm-3 col-lg-3" > </div>
+		<div class="col-xs-4 col-sm-1 col-lg-1" >
+			<img  id="img_logo" src="img/logo_white.png" alt="img_logo">
+		</div>
+		<div class="col-xs-8 col-sm-7 col-lg-5" id="curso_titulo" >
+		  <h2 class="curso_nome">PUC Minas - Medicina Veterinária</h2>
+		</div>
+		<div class="col-xs-0 col-sm-1 col-lg-3"> </div>
+	</div> <!-- FIM CABEÇALHO -->
 
+	<!-- Barra de navegação -->
+	<nav class="col-xs-12 col-sm-12 col-lg-12 navbar navbar-default navbar-static-top ">
+		<div class="container">
+		<!--<div class="col-xs-0 col-sm-1 col-lg-1" > </div>
+			<div class="col-xs-0 col-sm-1 col-lg-1" > </div> -->
+			<div class="navbar-header">  <!-- Icone com itens da barra de navegação que aparecerá quando tela ficar menor-->
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Alterar navegação</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+		  <div id="navbar" class="navbar-collapse collapse "> <!-- Itens da barra de navegação -->
+				<ul class="nav navbar-nav "> <!-- Itens da barra de navegação -->
+					<li class="nav_menu_itens active"><a href="index.html">Home</a></li>
+					<li class="dropdown nav_menu_itens"> <!-- Itens navegação - BOVINO-->
+						<a href="bovino.html" class="dropdown-toggle" data-toggle="dropdown">Bovino <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="bovino_sistema_locomotor.html">Sistema Locomotor</a></li>
+							<li><a href="pagina.html">Sistema Circulatório</a></li>
+							<li><a href="pagina.html">Sistema Respiratório</a></li>
+							<li><a href="pagina.html">Sistema Digestório</a></li>
+							<li><a href="pagina.html">Sistema Genitourinário</a></li>
+							<li><a href="pagina.html">Sistema Nervoso</a></li>
+							<li><a href="pagina.html">Órgãos dos sentidos</a></li>
+							<li><a href="pagina.html">Sistema tegumentar</a></li>
+						</ul>
+					</li>
 
-    <!-- Barra de navegação -->
-  	<nav class="col-xs-12 col-sm-12 col-lg-12 navbar navbar-default navbar-static-top ">
-  		<div class="container">
-  			<div class="col-xs-0 col-sm-1 col-lg-1" > </div>
-  			<div class="col-xs-0 col-sm-1 col-lg-1" > </div>
-  			<div class="navbar-header">  <!-- Icone com itens da barra de navegação que aparecerá quando tela ficar menor-->
-  					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-  					<span class="sr-only">Alterar navegação</span>
-  					<span class="icon-bar"></span>
-  					<span class="icon-bar"></span>
-  					<span class="icon-bar"></span>
-  				</button>
-  			</div>
-  		  <div id="navbar" class="navbar-collapse collapse "> <!-- Itens da barra de navegação -->
-  				<ul class="nav navbar-nav "> <!-- Itens da barra de navegação -->
-  					<li class="active"><a href="index.html">Home</a></li>
-  					<li class="dropdown"> <!-- Itens navegação - BOVINO-->
-  						<a href="bovino.html" class="dropdown-toggle" data-toggle="dropdown">Bovino <span class="caret"></span></a>
-  						<ul class="dropdown-menu">
-  							<li><a href="bovino_sistema_locomotor.html">Sistema Locomotor</a></li>
-  							<li><a href="pagina.html">Sistema Circulatório</a></li>
-  							<li><a href="pagina.html">Sistema Respiratório</a></li>
-  							<li><a href="pagina.html">Sistema Digestório</a></li>
-  							<li><a href="pagina.html">Sistema Genitourinário</a></li>
-  							<li><a href="pagina.html">Sistema Nervoso</a></li>
-  							<li><a href="pagina.html">Órgãos dos sentidos</a></li>
-  							<li><a href="pagina.html">Sistema tegumentar</a></li>
-  						</ul>
-  					</li>
+					<li class="dropdown nav_menu_itens"> <!-- Itens navegação - EQUINO-->
+						<a href="equino.html" class="dropdown-toggle" data-toggle="dropdown">Equino <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="equino_sistema_locomotor.html">Sistema Locomotor</a></li>
+							<li><a href="pagina.html">Sistema Circulatório</a></li>
+							<li><a href="pagina.html">Sistema Respiratório</a></li>
+							<li><a href="pagina.html">Sistema Digestório</a></li>
+							<li><a href="pagina.html">Sistema Genitourinário</a></li>
+							<li><a href="pagina.html">Sistema Nervoso</a></li>
+							<li><a href="pagina.html">Órgãos dos sentidos</a></li>
+							<li><a href="pagina.html">Sistema tegumentar</a></li>
+						</ul>
+					</li>
+					<li class="dropdown nav_menu_itens"> <!-- Itens navegação - Suino-->
+						<a href="suino.html" class="dropdown-toggle" data-toggle="dropdown">Suino <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="suino_sistema_locomotor.html">Sistema Locomotor</a></li>
+							<li><a href="pagina.html">Sistema Circulatório</a></li>
+							<li><a href="pagina.html">Sistema Respiratório</a></li>
+							<li><a href="pagina.html">Sistema Digestório</a></li>
+							<li><a href="pagina.html">Sistema Genitourinário</a></li>
+							<li><a href="pagina.html">Sistema Nervoso</a></li>
+							<li><a href="pagina.html">Órgãos dos sentidos</a></li>
+							<li><a href="pagina.html">Sistema tegumentar</a></li>
+						</ul>
+					</li>
 
-  					<li class="dropdown"> <!-- Itens navegação - EQUINO-->
-  						<a href="equino.html" class="dropdown-toggle" data-toggle="dropdown">Equino <span class="caret"></span></a>
-  						<ul class="dropdown-menu">
-  							<li><a href="equino_sistema_locomotor.html">Sistema Locomotor</a></li>
-  							<li><a href="pagina.html">Sistema Circulatório</a></li>
-  							<li><a href="pagina.html">Sistema Respiratório</a></li>
-  							<li><a href="pagina.html">Sistema Digestório</a></li>
-  							<li><a href="pagina.html">Sistema Genitourinário</a></li>
-  							<li><a href="pagina.html">Sistema Nervoso</a></li>
-  							<li><a href="pagina.html">Órgãos dos sentidos</a></li>
-  							<li><a href="pagina.html">Sistema tegumentar</a></li>
-  						</ul>
-  					</li>
-  					<li class="dropdown"> <!-- Itens navegação - SUIÇO-->
-  						<a href="suico.html" class="dropdown-toggle" data-toggle="dropdown">Suiço <span class="caret"></span></a>
-  						<ul class="dropdown-menu">
-  							<li><a href="suico_sistema_locomotor.html">Sistema Locomotor</a></li>
-  							<li><a href="pagina.html">Sistema Circulatório</a></li>
-  							<li><a href="pagina.html">Sistema Respiratório</a></li>
-  							<li><a href="pagina.html">Sistema Digestório</a></li>
-  							<li><a href="pagina.html">Sistema Genitourinário</a></li>
-  							<li><a href="pagina.html">Sistema Nervoso</a></li>
-  							<li><a href="pagina.html">Órgãos dos sentidos</a></li>
-  							<li><a href="pagina.html">Sistema tegumentar</a></li>
-  						</ul>
-  					</li>
+					<li class="dropdown nav_menu_itens"><!-- Itens navegação - CANINO-->
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Canino <span class="caret"></span> </a>
+						<ul class="dropdown-menu">
+							<li><a href="canino_sistema_locomotor.html">Sistema Locomotor</a></li>
+							<li><a href="pagina.html">Sistema Circulatório</a></li>
+							<li><a href="pagina.html">Sistema Respiratório</a></li>
+							<li><a href="pagina.html">Sistema Digestório</a></li>
+							<li><a href="pagina.html">Sistema Genitourinário</a></li>
+							<li><a href="pagina.html">Sistema Nervoso</a></li>
+							<li><a href="pagina.html">Órgãos dos sentidos</a></li>
+							<li><a href="pagina.html">Sistema tegumentar</a></li>
+						</ul>
+					</li>
 
-  					<li class="dropdown"><!-- Itens navegação - CANINO-->
-  							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Canino <span class="caret"></span> </a>
-  						<ul class="dropdown-menu">
-  							<li><a href="canino_sistema_locomotor.html">Sistema Locomotor</a></li>
-  							<li><a href="pagina.html">Sistema Circulatório</a></li>
-  							<li><a href="pagina.html">Sistema Respiratório</a></li>
-  							<li><a href="pagina.html">Sistema Digestório</a></li>
-  							<li><a href="pagina.html">Sistema Genitourinário</a></li>
-  							<li><a href="pagina.html">Sistema Nervoso</a></li>
-  							<li><a href="pagina.html">Órgãos dos sentidos</a></li>
-  							<li><a href="pagina.html">Sistema tegumentar</a></li>
-  						</ul>
-  					</li>
+					<li class="dropdown nav_menu_itens"> <!-- Itens navegação - FELINO-->
+						<a href="felino.html" class="dropdown-toggle" data-toggle="dropdown">Felino <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="felino_sistema_locomotor.html">Sistema Locomotor</a></li>
+							<li><a href="pagina.html">Sistema Circulatório</a></li>
+							<li><a href="pagina.html">Sistema Respiratório</a></li>
+							<li><a href="pagina.html">Sistema Digestório</a></li>
+							<li><a href="pagina.html">Sistema Genitourinário</a></li>
+							<li><a href="pagina.html">Sistema Nervoso</a></li>
+							<li><a href="pagina.html">Órgãos dos sentidos</a></li>
+							<li><a href="pagina.html">Sistema tegumentar</a></li>
+						</ul>
+					</li>
 
-  					<li class="dropdown"> <!-- Itens navegação - FELINO-->
-  						<a href="felino.html" class="dropdown-toggle" data-toggle="dropdown">Felino <span class="caret"></span></a>
-  						<ul class="dropdown-menu">
-  							<li><a href="felino_sistema_locomotor.html">Sistema Locomotor</a></li>
-  							<li><a href="pagina.html">Sistema Circulatório</a></li>
-  							<li><a href="pagina.html">Sistema Respiratório</a></li>
-  							<li><a href="pagina.html">Sistema Digestório</a></li>
-  							<li><a href="pagina.html">Sistema Genitourinário</a></li>
-  							<li><a href="pagina.html">Sistema Nervoso</a></li>
-  							<li><a href="pagina.html">Órgãos dos sentidos</a></li>
-  							<li><a href="pagina.html">Sistema tegumentar</a></li>
-  						</ul>
-  					</li>
-
-  					<li><a href="material.html">Materiais</a></li>
-  					<li><a href="testes.html">Testes</a></li>
-  					<li><a href="contato.html">Fale Conosco</a></li>
-  				</ul>
-  			</div>
-  		</div>
-  	</nav>
+					<li class="nav_menu_itens"><a href="material.html">Materiais</a></li>
+					<li class="nav_menu_itens"><a href="testes.html">Testes</a></li>
+					<li class="nav_menu_itens_fconosco"><a href="contato.html">Fale Conosco</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
   	<!-- fim barra navegação -->
 
     <!-- Conteúdo da página -->
@@ -139,6 +138,7 @@
                 estrutura.
                 Nosso objetivo é possibilitar que as aulas e estudos de anatomia animal sejam mais dinâmicas, práticas e objetivas.
             </p>
+			<p>  <a href="comousar.html"> Precisa de ajuda para utilizar o site? Clique aqui. </a> </p>
           </div><!-- /.jumbotron -->
         </div><!-- /.col-md-12 -->
       </div><!-- /.row -->

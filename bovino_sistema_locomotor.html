@@ -23,10 +23,10 @@
 	<div class="col-xs-12 col-sm-12 col-lg-12 text-center header">
 		<div class="col-xs-0 col-sm-3 col-lg-3" > </div>
 		<div class="col-xs-4 col-sm-1 col-lg-1" >
-			<img src="img/logo_white.png" alt="img_logo">
+			<img  id="img_logo" src="img/logo_white.png" alt="img_logo">
 		</div>
-		<div class="col-xs-8 col-sm-7 col-lg-5 " >
-		  <h2>  PUC Minas - Medicina Veterinária </h2>
+		<div class="col-xs-8 col-sm-7 col-lg-5" id="curso_titulo" >
+		  <h2 class="curso_nome">PUC Minas - Medicina Veterinária</h2>
 		</div>
 		<div class="col-xs-0 col-sm-1 col-lg-3"> </div>
 	</div> <!-- FIM CABEÇALHO -->
@@ -34,8 +34,8 @@
 	<!-- Barra de navegação -->
 	<nav class="col-xs-12 col-sm-12 col-lg-12 navbar navbar-default navbar-static-top ">
 		<div class="container">
-			<div class="col-xs-0 col-sm-1 col-lg-1" > </div>
-			<div class="col-xs-0 col-sm-1 col-lg-1" > </div>
+		<!--<div class="col-xs-0 col-sm-1 col-lg-1" > </div>
+			<div class="col-xs-0 col-sm-1 col-lg-1" > </div> -->
 			<div class="navbar-header">  <!-- Icone com itens da barra de navegação que aparecerá quando tela ficar menor-->
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 					<span class="sr-only">Alterar navegação</span>
@@ -46,8 +46,8 @@
 			</div>
 		  <div id="navbar" class="navbar-collapse collapse "> <!-- Itens da barra de navegação -->
 				<ul class="nav navbar-nav "> <!-- Itens da barra de navegação -->
-					<li><a href="index.html">Home</a></li>
-					<li class="dropdown active"> <!-- Itens navegação - BOVINO-->
+					<li class="nav_menu_itens"><a href="index.html">Home</a></li>
+					<li class="dropdown active nav_menu_itens"> <!-- Itens navegação - BOVINO-->
 						<a href="bovino.html" class="dropdown-toggle" data-toggle="dropdown">Bovino <span class="caret"></span></a>
 						<ul class="dropdown-menu">
 							<li><a href="bovino_sistema_locomotor.html">Sistema Locomotor</a></li>
@@ -61,7 +61,7 @@
 						</ul>
 					</li>
 
-					<li class="dropdown"> <!-- Itens navegação - EQUINO-->
+					<li class="dropdown nav_menu_itens"> <!-- Itens navegação - EQUINO-->
 						<a href="equino.html" class="dropdown-toggle" data-toggle="dropdown">Equino <span class="caret"></span></a>
 						<ul class="dropdown-menu">
 							<li><a href="equino_sistema_locomotor.html">Sistema Locomotor</a></li>
@@ -74,10 +74,10 @@
 							<li><a href="pagina.html">Sistema tegumentar</a></li>
 						</ul>
 					</li>
-					<li class="dropdown"> <!-- Itens navegação - SUIÇO-->
-						<a href="suico.html" class="dropdown-toggle" data-toggle="dropdown">Suiço <span class="caret"></span></a>
+					<li class="dropdown nav_menu_itens"> <!-- Itens navegação - Suino-->
+						<a href="suino.html" class="dropdown-toggle" data-toggle="dropdown">Suino <span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li><a href="suico_sistema_locomotor.html">Sistema Locomotor</a></li>
+							<li><a href="suino_sistema_locomotor.html">Sistema Locomotor</a></li>
 							<li><a href="pagina.html">Sistema Circulatório</a></li>
 							<li><a href="pagina.html">Sistema Respiratório</a></li>
 							<li><a href="pagina.html">Sistema Digestório</a></li>
@@ -88,7 +88,7 @@
 						</ul>
 					</li>
 
-					<li class="dropdown"><!-- Itens navegação - CANINO-->
+					<li class="dropdown nav_menu_itens"><!-- Itens navegação - CANINO-->
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Canino <span class="caret"></span> </a>
 						<ul class="dropdown-menu">
 							<li><a href="canino_sistema_locomotor.html">Sistema Locomotor</a></li>
@@ -102,7 +102,7 @@
 						</ul>
 					</li>
 
-					<li class="dropdown"> <!-- Itens navegação - FELINO-->
+					<li class="dropdown nav_menu_itens"> <!-- Itens navegação - FELINO-->
 						<a href="felino.html" class="dropdown-toggle" data-toggle="dropdown">Felino <span class="caret"></span></a>
 						<ul class="dropdown-menu">
 							<li><a href="felino_sistema_locomotor.html">Sistema Locomotor</a></li>
@@ -116,9 +116,9 @@
 						</ul>
 					</li>
 
-					<li><a href="material.html">Materiais</a></li>
-					<li><a href="testes.html">Testes</a></li>
-					<li><a href="contato.html">Fale Conosco</a></li>
+					<li class="nav_menu_itens"><a href="material.html">Materiais</a></li>
+					<li class="nav_menu_itens"><a href="testes.html">Testes</a></li>
+					<li class="nav_menu_itens_fconosco"><a href="contato.html">Fale Conosco</a></li>
 				</ul>
 			</div>
 		</div>
@@ -139,10 +139,10 @@
 		<div class="col-xs-12 col-sm-12 col-lg-12">
 			<div class="conteudo">
 				<div id="sistema_conjuntos">
-			    <div id="sistema_selecionado"><img class="img_sistema_selecionado" src="img/sistema_escolhido_esqueletico.png" alt="sistema selecionado"></div>
-			    <div class="sistema_unidade"><a href="link"><img class="img_sistema_unidade" src="img/sistema_unidades_ossos.png" alt="sistema unidade"></a></div>
-					<div class="sistema_unidade"><a href="link"><img class="img_sistema_unidade" src="img/sistema_unidades_musculos.png" alt="sistema unidade"></a></div>
-					<div id="sistema_unidade"><a href="link"><img class="img_sistema_unidade" src="img/sistema_unidades_ligamentos.png" alt="sistema unidade"></a></div>
+			    <div id="sistema_selecionado"><img class="img_sistema_selecionado" src="img/sistema_escolhido_locomotor.png" alt="sistema selecionado"></div>
+			    <div class="sistema_unidade "><a href="bovino_sistema_locomotor.html"><img class="img_sistema_unidade unidade_ativada" src="img/sistema_unidades_ossos.png" alt="sistema unidade"></a></div>
+					<div class="sistema_unidade"><a href="link"><img class="img_sistema_unidade" src="img/sistema_unidades_articulacoes.png" alt="sistema unidade"></a></div>
+					<div id="sistema_unidade"><a href="link"><img class="img_sistema_unidade" src="img/sistema_unidades_musculos.png" alt="sistema unidade"></a></div>
 				</div>
 			  <div id="coluna_lateral">
 			    <div class="coluna_item ativado"><a href="javascript:void(0)" id="0" class="link_part" ><img class="img_coluna_item" src="img/coluna_item_cranio.png" alt="sistema unidade"></a></div>
@@ -178,7 +178,7 @@
 			</div>
 		</div>
 	</div
-	<!-- Fim conteúdo da página-->
+	><!-- Fim conteúdo da página-->
 
 	<br>
 	<!-- Rodapé -->
@@ -194,9 +194,9 @@
 
 		/* pasta 0 Cranio */	['p(a01).png','p(a02).png','p(a03).png','p(a04).png','p(a05).png','p(a06).png','p(a07).png','p(a08).png','p(a09).png','p(a10).png','p(a11).png','p(a12).png','p(a13).png'],
 		/* pasta 1 Costela*/	['p(a01).png','p(a02).png','p(a03).png'],
-		/* pasta 2 Membro tor*/	['p(a01).png','p(a02).png'],
-		/* pasta 3 Membro pel*/	['p(a01).png','p(a02).png'],
-		/* pasta 4 Coluna ver*/	['p(a01).png','p(a02).png'],
+		/* pasta 2 Membro tor*/	['p(a01).png','p(a02).png','p(a03).png','p(a04).png','p(a05).png','p(a06).png','p(a07).png','p(a08).png','p(a09).png','p(a10).png','p(a11).png','p(a12).png','p(a13).png'],
+		/* pasta 3 Membro pel*/	['p(a01).png','p(a02).png','p(a03).png','p(a04).png','p(a05).png','p(a06).png','p(a07).png','p(a08).png','p(a09).png','p(a10).png','p(a11).png','p(a12).png','p(a13).png'],
+		/* pasta 4 Coluna ver*/	['p(a01).png','p(a02).png','p(a03).png','p(a04).png','p(a05).png','p(a06).png','p(a07).png','p(a08).png','p(a09).png','p(a10).png','p(a11).png','p(a12).png','p(a13).png'],
 		/* pasta 5 Esterno   */	['p(a01).png','p(a02).png']
 
 			];
@@ -215,11 +215,11 @@
 		var albumG = [
 
 		/* pasta 0 Cranio */	['g(a01).png','g(a02).png','g(a03).png','g(a04).png','g(a05).png','g(a06).png','g(a07).png','g(a08).png','g(a09).png','g(a10).png','g(a11).png','g(a12).png','g(a13).png'],
-		/* pasta 1 Costela*/	['g(a01).png','g(a02).png'],
-		/* pasta 2 Membro tor*/	['g(a01).png','g(a02).png'],
-		/* pasta 3 Membro pel*/	['g(a01).png','g(a02).png'],
-		/* pasta 4 Coluna ver*/	['g(a01).png','g(a02).png'],
-		/* pasta 5 Esterno   */	['g(a01).png','g(a02).png']
+		/* pasta 1 Costela*/	['g(a01).png','g(a02).png','g(a03).png','g(a04).png','g(a05).png','g(a06).png','g(a07).png','g(a08).png','g(a09).png','g(a10).png','g(a11).png','g(a12).png','g(a13).png'],
+		/* pasta 2 Membro tor*/	['g(a01).png','g(a02).png','g(a03).png','g(a04).png','g(a05).png','g(a06).png','g(a07).png','g(a08).png','g(a09).png','g(a10).png','g(a11).png','g(a12).png','g(a13).png'],
+		/* pasta 3 Membro pel*/	['g(a01).png','g(a02).png','g(a03).png','g(a04).png','g(a05).png','g(a06).png','g(a07).png','g(a08).png','g(a09).png','g(a10).png','g(a11).png','g(a12).png','g(a13).png'],
+		/* pasta 4 Coluna ver*/	['g(a01).png','g(a02).png','g(a03).png','g(a04).png','g(a05).png','g(a06).png','g(a07).png','g(a08).png','g(a09).png','g(a10).png','g(a11).png','g(a12).png','g(a13).png'],
+		/* pasta 5 Esterno   */	['g(a01).png','g(a02).png','g(a03).png','g(a04).png','g(a05).png','g(a06).png','g(a07).png','g(a08).png','g(a09).png','g(a10).png','g(a11).png','g(a12).png','g(a13).png']
 
 		];
 		$('.carrousel').html('');

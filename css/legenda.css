@@ -1,0 +1,132 @@
+#c01{
+	position:absolute;
+	height: 15px;	
+	width: 15px;
+	background-color: black;
+	top: 150px;
+	left: 150px;
+	z-index:90;	
+	}
+#c02{
+	position:absolute;
+	height: 15px;	
+	width: 15px;
+	background-color: white;
+	top: 300px;
+	left: 150px;
+	z-index:90;	
+	}
+#c03{
+	position:absolute;
+	height: 15px;	
+	width: 15px;
+	background-color: SpringGreen ;
+	top: 300px;
+	left: 350px;
+	z-index:90;	
+	}
+#c04{
+	position:absolute;
+	height: 15px;	
+	width: 15px;
+	background-color: blue;
+	top: 210px;
+	left: 430px;
+	z-index:90;	
+	}
+#c05{
+	position:absolute;
+	height: 15px;	
+	width: 15px;
+	background-color: red;
+	top: 220px;
+	left: 110px;
+	z-index:90;	
+	}
+#c06{
+	position:absolute;
+	height: 15px;	
+	width: 15px;
+	background-color: yellow;
+	top: 390px;
+	left: 115px;
+	z-index:90;	
+	}
+#c07{
+	position:absolute;
+	height: 15px;	
+	width: 15px;
+	background-color: cyan;
+	top: 300px;
+	left: 550px;
+	z-index:90;	
+	}
+#c08{
+	position:absolute;
+	height: 15px;	
+	width: 15px;
+	background-color: LightCyan  ;
+	top: 250px;
+	left: 750px;
+	z-index:90;	
+	}
+#c09{
+	position:absolute;
+	height: 15px;	
+	width: 15px;
+	background-color: lightgreen;
+	top: 170px;
+	left: 630px;
+	z-index:90;	
+	}
+.cubo:hover {
+	background-color: red;	
+	}
+.descricao{
+	position:absolute;
+	right: 10px;
+	top: 10px;
+	background-image: url("../img/legenda_bg.png");
+	height: 50px;	
+	width: 200px;
+	z-index:98;
+}
+.descricao h1 {
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 28px;
+	font-style:italic;
+	color: white;
+	position: relative;	
+	top: -12px;
+	left: 10px;
+}
+.marcacao {
+	display: none;
+	background-image: url("../img/legenda_bg.png");
+	position:absolute;
+	height: 50px;	
+	width: 200px;
+	top: -50px;
+	z-index:99;	
+	}
+.marcacao p {
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+	color: white;
+	position: relative;
+	top: -45px;
+	left: 10px;
+		
+	}
+.marcacao h1 {
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 18px;
+	font-style:italic;
+	color: white;
+	position: relative;
+	top: -15px;
+	left: 10px;	
+	}
+.cubo:hover div {
+	display:block;
+		
+	}
