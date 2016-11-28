@@ -14,26 +14,26 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- CSS Atlas Animal -->
     <link href="css/atlasanimal.css" rel="stylesheet">
+    <script src="js/validar_teste.js"></script>
     <script src="jquery-2.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </head>
 
   <body>
-    <!-- CABEÇALHO -->
+    <!--CABEÇALH0 -->
     <div class="header">
-  		<div class="container container_header">
-  			<div class="col-xs-5 col-sm-1 col-lg-2 " >  </div>
-  			<div class="col-xs-7 col-sm-2 col-lg-2" >
-  				<img  id="img_logo" src="img/logo_white.png" alt="img_logo">
-  			</div>
+      <div class="container container_header">
+        <div class="col-xs-5 col-sm-1 col-lg-2 " >  </div>
+        <div class="col-xs-7 col-sm-2 col-lg-2" >
+          <img  id="img_logo" src="img/logo_white.png" alt="img_logo">
+        </div>
 
-  			<div class="col-xs-12 col-sm-9 col-lg-8" >
-  			  <h2 class="curso_nome">PUC Minas - Medicina Veterinária</h2>
-  			</div>
+        <div class="col-xs-12 col-sm-9 col-lg-8" >
+          <h2 class="curso_nome">PUC Minas - Medicina Veterinária</h2>
+        </div>
 
-  		</div> <!-- FIM container -->
-  	</div>
-    <!-- FIM CABEÇALHO -->
+      </div> <!-- FIM container -->
+    </div> <!-- FIM CABEÇALHO -->
 
 	<!-- Barra de navegação -->
 	<nav class="col-xs-12 col-sm-12 col-lg-12 navbar navbar-default navbar-static-top ">
@@ -51,7 +51,7 @@
 		  <div id="navbar" class="navbar-collapse collapse "> <!-- Itens da barra de navegação -->
 				<ul class="nav navbar-nav "> <!-- Itens da barra de navegação -->
 					<li class="nav_menu_itens"><a href="index.html">Home</a></li>
-					<li class="dropdown active nav_menu_itens"> <!-- Itens navegação - BOVINO-->
+					<li class="dropdown nav_menu_itens"> <!-- Itens navegação - BOVINO-->
 						<a href="bovino.html" class="dropdown-toggle" data-toggle="dropdown">Bovino <span class="caret"></span></a>
 						<ul class="dropdown-menu">
 							<li><a href="bovino_sistema_locomotor.html">Sistema Locomotor</a></li>
@@ -81,7 +81,7 @@
 					<li class="dropdown nav_menu_itens"> <!-- Itens navegação - Suino-->
 						<a href="suino.html" class="dropdown-toggle" data-toggle="dropdown">Suino <span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li><a href="suico_sistema_locomotor.html">Sistema Locomotor</a></li>
+							<li><a href="suino_sistema_locomotor.html">Sistema Locomotor</a></li>
 							<li><a href="pagina.html">Sistema Circulatório</a></li>
 							<li><a href="pagina.html">Sistema Respiratório</a></li>
 							<li><a href="pagina.html">Sistema Digestório</a></li>
@@ -121,7 +121,7 @@
 					</li>
 
 					<li class="nav_menu_itens"><a href="material.html">Materiais</a></li>
-					<li class="nav_menu_itens"><a href="testes.html">Testes</a></li>
+					<li class="nav_menu_iten active"><a href="testes.html">Testes</a></li>
 					<li class="nav_menu_itens_fconosco"><a href="contato.html">Fale Conosco</a></li>
 				</ul>
 			</div>
@@ -129,30 +129,59 @@
 	</nav>
   	<!-- fim barra navegação -->
 
-		<!-- Conteúdo da página -->
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<h3>Bovino</h3>
-					<hr>
-					<ol class="breadcrumb">
-						<li><a class="link" href="index.html">Home</a>  </li>
-						<li class="active">Bovino</li>
-					</ol>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 text-center">
-					<h1> Ops! </h1><p> No momento a página encontra-se em construção...<br>Enquanto isso, por que não aproveita pra olhar os nossos outros conteúdos?!</p>
+    <!-- Conteúdo da página -->
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-lg-12">
+          <h3>Testes</h3>
+          <hr>
+          <ol class="breadcrumb">
+            <li><a class="link" href="index.html">Home</a>  </li>
+            <li><a class="link" href="testes.html">Testes</a>  </li>
+            <li class="active">Responder teste 02</li>
+          </ol>
+        </div>
+    </div>
+      </div>
+    <div class="container"> <!-- formulário teste -->
+      <div class="panel" style="background-color: #f5f5f5;" >
+  	     <div class="panel-body">
+            <h3 class="text-center"> Teste 02</h3>
+            <div class="col-xs-12 col-sm-9 col-lg-4 text-center">
+		           <img src="img/teste.png" alt="imagem teste" class="img-responsive" align="right">
+	          </div>
 
-				</div><!-- /.col-md-12 -->
-			</div><!-- /.row -->
-		</div><!-- /.container -->
-		<!-- FIM Conteúdo da página -->
-
-
-
-
+          	<div class="col-xs-12 col-sm-12 col-lg-8 text-center"> <br>
+  	           <p class="text-left"> Na imagem consta os detalhes anatômicos numerados do osso úmero.
+                 Nos campos abaixos, descreva o nome a cada um dos detalhes anatômicos. Lembrando que a ortografia
+                 deve estar correta para que a resposta fique correta. <br> <br> </p>
+              <form method="post" id="Fale" class="form-inline" action="sucesso.html">
+                  <div class="form-group text-center">
+                    <label for="text"> 1 = </label>
+                    <input name="resposta1" type="text" class="form-control" id="resposta1" placeholder="Resposta 1">
+                  </div> <br><br>
+                  <div class="form-group text-center">
+                    <label for="text">2 = </label>
+                    <input name="resposta2" type="text" class="form-control" id="resposta2" placeholder="Resposta 2">
+                  </div><br><br>
+                  <div class="form-group text-center">
+                    <label for="text">3 = </label>
+                    <input name="resposta3" type="text" class="form-control" id="resposta3" placeholder="Resposta 3">
+                  </div><br><br>
+                  <div class="form-group text-center">
+                    <label for="text">4 = </label>
+                    <input name="resposta4" type="text" class="form-control" id="resposta4" placeholder="Resposta 4">
+                  </div><br><br>
+                  <div class="form-group text-center">
+                    <label for="text">5 = </label>
+                    <input name="resposta5" type="text" class="form-control" id="resposta5" placeholder="Resposta 5">
+                  <br><br><button class="btn btn-lg btn-primary btn-block" type="button" onClick="Resposta_teste()">Conferir minhas respostas</button>
+                  </div><br><br>
+              </form>
+            </div>
+  	      </div>
+      </div>
+  	</div>
 
     <!-- Rodapé -->
 		<footer class="footer">
@@ -163,7 +192,5 @@
 		<!-- FIM Rodapé -->
 
 
-
-
-  </body>
+</body>
 </html>

@@ -6,13 +6,13 @@ body {
 div.header  {/* Definicoes do cabeçalho ( barra superior laranja) - todas as paginas*/
 background-color: #e4801e;
 color: white;
-height: 100px;
+
+
 
 }
 div.container_header{
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: #e4801e;
 }
 .curso_nome{/* Definicoes do nome do curso - todas as paginas*/
 	color:white;
