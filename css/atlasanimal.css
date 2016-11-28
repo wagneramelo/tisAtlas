@@ -6,17 +6,14 @@ body {
 div.header  {/* Definicoes do cabeçalho ( barra superior laranja) - todas as paginas*/
 background-color: #e4801e;
 color: white;
+height: 100px;
 
 }
-#img_logo{/* Definicoes do logo da puc - todas as paginas*/
-	height: 60px;
-	width: 60px;
-	border: 0px solid green;
-	position: relative;
-	float: left;
-	left: 75px;
-	top: 0px;
+div.container_header{
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
+
 .curso_nome{/* Definicoes do nome do curso - todas as paginas*/
 	color:white;
 	position: relative;
