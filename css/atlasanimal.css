@@ -12,8 +12,8 @@ height: 100px;
 div.container_header{
   padding-top: 15px;
   padding-bottom: 15px;
+  background-color: #e4801e;
 }
-
 .curso_nome{/* Definicoes do nome do curso - todas as paginas*/
 	color:white;
 	position: relative;
