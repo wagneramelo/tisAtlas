@@ -144,32 +144,34 @@
           <div class="jumbotron testes">
             <div class="row text-center">
               <h2> Novo Questionário </h2>
-
               <form class="form-inline">
                 <div class="form-group">
                   <label>Pergunta: </label>
-                  <textarea rows="2" cols="40" class="form-control" id="message" maxlength="500" style="resize:none"></textarea>
+                  <textarea rows="2" cols="40" class="form-control" name="pergunta" maxlength="500" style="resize:none"></textarea>
                 </div></br> </br>
 
                 <div class="form-group">
                   <label for="exampleInputName2">Resposta a)</label>
-                  <input type="text" class="form-control" id="exampleInputName2" placeholder="Resposta a)">
+                  <input type="text" class="form-control" name="respostaa" placeholder="Resposta a)">
                 </div> </br>
                 <div class="form-group">
                   <label for="exampleInputName2">Resposta b)</label>
-                  <input type="text" class="form-control" id="exampleInputName2" placeholder="Resposta b)">
+                  <input type="text" class="form-control" name="respostab" placeholder="Resposta b)">
                 </div> </br>
                 <div class="form-group">
                   <label for="exampleInputName2">Resposta c)</label>
-                  <input type="text" class="form-control" id="exampleInputName2" placeholder="Resposta c)">
+                  <input type="text" class="form-control" name="respostac" placeholder="Resposta c)">
                 </div> </br>
                 <div class="form-group">
                   <label for="exampleInputName2">Resposta d)</label>
-                  <input type="text" class="form-control" id="exampleInputName2" placeholder="Resposta d)">
+                  <input type="text" class="form-control" name="respostad" placeholder="Resposta d)">
+                </div></br> <br>
+                <div class="form-group">
+                  <label for="exampleInputName2">Resposta correta</label>
+                  <input type="text" class="form-control" name="respostacorreta" placeholder="Resposta correta">
                 </div></br> </br>
                 <div class="form-group">
-
-                    <input type="file" id="exampleInputFile">
+                  <input type="file" id="exampleInputFile">
                 </div></br> </br>
                 <button type="submit" class="btn btn-primary" onclick="alert('Teste adicionado com sucesso.')">Adicionar Questão</button> </br> </br> </br> </br>
 
