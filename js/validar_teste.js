@@ -14,6 +14,54 @@ function Resposta_teste(){
   resposta3=resposta3.trim();
   resposta4=resposta4.trim();
   resposta5=resposta5.trim();
+  var alerta ="Respostas incorretas: "
+  if( (resposta1 != "") && (resposta2 != "") && (resposta3 != "") && (resposta4 != "") && (resposta5 != "")){
+    if( (resposta1 == "cabeça do úmero") && (resposta2 == "colo") && (resposta3== "tubérculo menor") && (resposta4== "tuberosidade redonda maior") && (resposta5 == "epicôndilo medial")){
+      alert("Parabés !!! Você acertou todas.")
+    }
+    else {
+      if( (resposta1 != "cabeça do úmero") && (resposta2 != "colo") && (resposta3!= "tubérculo menor") && (resposta4!= "tuberosidade redonda maior") && (resposta5 != "epicôndilo medial")){
+        alert("Que pena! Você errou todas as questões.")
+      }
+      else {
+        if( (resposta1 != "cabeça do úmero")){
+          alerta= alerta + "1 ";
+        }
+        if ((resposta2 != "colo")){
+          alerta = alerta + "2 ";
+        }
+        if ((resposta3 != "tubérculo menor")){
+          alerta = alerta + "3 "
+        }
+        if ((resposta4 != "tuberosidade redonda maior")){
+          alerta = alerta + "4 "
+        }
+        if ((resposta5 != "epicôndilo medial")){
+          alerta = alerta + "5 "
+        }
+        alert (alerta);
+      } // FINAL ELSE LINHA 19
+    } // FINAL ELSE LINHA 15
+  } // FINAL SE LINHA 13
+  else {
+    alert("Preencha os campos vazios!");
+  }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* original
   if( (resposta1 != "") && (resposta2 != "") && (resposta3 != "") && (resposta4 != "") && (resposta5 != "")){
     if( (resposta1 == "cabeça do úmero") && (resposta2 == "colo") && (resposta3== "tubérculo menor") && (resposta4== "tuberosidade redonda maior") && (resposta5 == "epicôndilo medial")){
       alert("Parabés !!! Você acertou todas.")
@@ -52,4 +100,4 @@ function Resposta_teste(){
   }
 
 
-}
+} */
